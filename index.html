@@ -21,209 +21,216 @@
         <figure class="icon">
             <img src="img/signature.svg" alt="petit logo">
         </figure>
-        <div class="navbar is-flex is-justify-content-center">
-            <div class="card is-flex is-justify-content-center card_navbar mb-6 pt-3 pb-3">
-                <a class="button is-rounded mr-5" href="#accueil">Accueil</a>
-                <a class="button is-rounded mr-5" href="#projets">Projets</a>
-                <a class="button is-rounded mr-5" href="#formation">Formation</a>
-                <a class="button is-rounded mr-5" href="#moi">Moi</a>
-                <a class="button bouton is-rounded mr-5 connection" href="#mecontacter">Me Contacter</a>
-                <a href="img/CV_Eva_Briffaut.pdf" download class="btn button is-rounded bouton">
-                    <i class="fa-solid fa-download"></i>
-                    CV
-                </a>
+        <nav class="navbar is-flex is-justify-content-center mt-5">
+            <div class="card_navbar is-flex is-align-items-center px-5 py-4 mt-2">
+                <a class="nav-link" href="#accueil">Accueil</a>
+                <a class="nav-link" href="#projets">Projets</a>
+                <a class="nav-link" href="#formation">Formation</a>
+                <a class="nav-link" href="#moi">Moi</a>
+
+                <div class="is-flex ml-3">
+                    <a class="button custom-btn primary mr-3" href="#mecontacter">Me Contacter</a>
+                    <a href="img/CV_Eva_Briffaut.pdf" download class="button custom-btn outline">
+                        <i class="fa-solid fa-download mr-2"></i> CV
+                    </a>
+                </div>
             </div>
-        </div>
+        </nav>
     </header class="mb-6">
 
     <main>
-        <section id="accueil">
-            <div class="bienvenue is-flex is-justify-content-center">
-                <figure class="image is-square image_profile mt-0 mb-4">
-                    <img class="image profil" src="img/signature.svg" alt="logo" />
-                </figure>
-            </div>
-            <div class="columns is-flex is-justify-content-center is-flex-direction-row mt-6 mb-6">
-                <div class="column is-half">
-                    <div class="card-content card-content_profil">
-                        <div class="content">
-                            <h2 class="title minibio is-size-3">Eva Briffaut</h2>
-                            <p class=" interet is-size-6">Je suis Eva Briffaut, j’ai 19 ans et je suis en deuxième année
-                                de
-                                <b>BUT MMI</b>
-                                (métier du multimédia et de l’internet) à Lannion dans les Côtes-d’Armor. J’habite aussi
-                                dans le
-                                22 où il ne pleut pas toujours… juste un peu plus souvent qu’ailleurs ! (Promis, on a
-                                aussi
-                                du
-                                soleil !)
+        <section id="accueil" class="section">
+            <div class="container">
+                <div class="is-flex is-justify-content-center mb-6">
+                    <figure class="image signature-container">
+                        <img src="img/signature.svg" alt="Eva Briffaut Signature" />
+                    </figure>
+                </div>
+
+                <div class="columns is-vcentered is-variable is-8">
+                    <div class="column is-6">
+                        <div class="bio-content">
+                            <h1 class="title is-size-1 custom-title">Eva Briffaut</h1>
+                            <p class="subtitle is-size-4 has-text-weight-light mb-5">
+                                Étudiante en <span class="highlight">BUT MMI</span> & Exploratrice Créative
                             </p>
-                            <p class="interet"><b>Mon projet </b>: me lancer dans des aventures mêlant graphisme et
-                                audiovisuel.
-                            </p>
-                            <p class="interet">Depuis longtemps, je regarde les youtubeurs avec des étoiles dans les
-                                yeux.
-                                Ils m’ont donné
-                                le
-                                goût du <b>montage vidéo</b>. Alors, je m’ entraîne seule en créant de courts projets
-                                personnels
-                                pour
-                                me faire la main. J’aime voir mes projets, de montage ou de graphisme, grandir et se
-                                former
-                                petit à petit. C’est génial de voir concrètement le projet aboutir.</p>
-                            <p class="interet">Alors, en route pour les étoiles ! Venez visiter mes projets !</p>
+
+                            <div class="content interet-text">
+                                <p>
+                                    J’ai 19 ans et je suis à Lannion, dans les Côtes-d’Armor. J’habite dans le 22 où il
+                                    ne pleut pas toujours…
+                                    juste un peu plus souvent qu’ailleurs ! ☀️
+                                </p>
+                                <p>
+                                    <strong>Mon projet :</strong> Me lancer dans des aventures mêlant
+                                    <span class="tag-skill">Graphisme</span> et <span
+                                        class="tag-skill">Audiovisuel</span>.
+                                </p>
+                                <p>
+                                    Inspirée par l'univers de YouTube, je me passionne pour le <strong>montage
+                                        vidéo</strong>.
+                                    J’adore voir une idée brute se transformer petit à petit en un projet concret et
+                                    abouti.
+                                </p>
+                                <p class="is-italic has-text-info mt-5">
+                                    "En route pour les étoiles ! Venez visiter mes projets !"
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="column is-one-quarter">
-                    <figure class="image is-square image_profile">
-                        <img class="image is-rounded profil" src="./img/eva.svg" alt="image de profil" />
-                    </figure>
+
+                    <div class="column is-5 is-offset-1">
+                        <div class="profile-image-wrapper">
+                            <figure class="image is-square">
+                                <img class="is-rounded profile-pic" src="./img/eva.svg" alt="Portrait de Eva" />
+                            </figure>
+                            <div class="floating-badge">MMI 2</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
 
         <section class="projets_marge pt-6" id="projets">
-    <img src="img/projet.svg" alt="Mes Projets" class="section-title-img">
+            <img src="img/projet.svg" alt="Mes Projets" class="projet-title-img">
 
-    <div class="container px-4">
-        <div class="columns is-multiline is-centered">
+            <div class="container px-4">
+                <div class="columns is-multiline is-centered">
 
-            <div class="column is-one-third">
-                <div class="card project-card">
-                    <div class="card-image">
-                        <figure class="image">
-                            <img src="img/deadstar.svg" alt="Dead Star">
-                        </figure>
-                    </div>
-                    <div class="card-overlay">
-                        <h3 class="title is-4">Dead Star</h3>
-                        <time class="subtitle is-7">Déc 2025</time>
-                        <div class="content">
-                            <p class="description">Affiche promotionnelle</p>
-                            <div class="tags">
-                                <span class="tag is-link is-light">Figma</span>
-                                <span class="tag is-danger is-light">Personnel</span>
-                                <span class="tag is-primary is-light">Graphisme</span>
+                    <div class="column is-one-third">
+                        <div class="card project-card">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="img/deadstar.svg" alt="Dead Star">
+                                </figure>
+                            </div>
+                            <div class="card-overlay">
+                                <h3 class="title is-4">Dead Star</h3>
+                                <time class="subtitle is-7">Déc 2025</time>
+                                <div class="content">
+                                    <p class="description">Affiche promotionnelle</p>
+                                    <div class="tags">
+                                        <span class="tag is-link is-light">Figma</span>
+                                        <span class="tag is-danger is-light">Personnel</span>
+                                        <span class="tag is-primary is-light">Graphisme</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="column is-one-third">
-                <div class="card project-card">
-                    <div class="card-image">
-                        <figure class="image">
-                            <img src="img/locfit.svg" alt="Locfit">
-                        </figure>
-                    </div>
-                    <div class="card-overlay">
-                        <h3 class="title is-4">Locfit</h3>
-                        <time class="subtitle is-7">Sep - Dec 2025</time>
-                        <div class="content">
-                            <p class="description">Site de location de matériel sportif</p>
-                            <div class="tags">
-                                <span class="tag is-link is-light">Affinity</span>
-                                <span class="tag is-primary is-light">Graphisme</span>
+                    <div class="column is-one-third">
+                        <div class="card project-card">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="img/locfit.svg" alt="Locfit">
+                                </figure>
+                            </div>
+                            <div class="card-overlay">
+                                <h3 class="title is-4">Locfit</h3>
+                                <time class="subtitle is-7">Sep - Dec 2025</time>
+                                <div class="content">
+                                    <p class="description">Site de location de matériel sportif</p>
+                                    <div class="tags">
+                                        <span class="tag is-link is-light">Affinity</span>
+                                        <span class="tag is-primary is-light">Graphisme</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="column is-one-third">
-                <div class="card project-card">
-                    <div class="card-image">
-                        <figure class="image">
-                            <img src="img/iuticarte.svg" alt="IUT'icarte">
-                        </figure>
-                    </div>
-                    <div class="card-overlay">
-                        <h3 class="title is-4">IUT'icarte</h3>
-                        <time class="subtitle is-7">Oct - Déc 2024</time>
-                        <div class="content">
-                            <p class="description">Objectif : Zéro Faim (ODD)</p>
-                            <div class="tags">
-                                <span class="tag is-link is-light">Figma</span>
-                                <span class="tag is-info is-light">Cahier des charges</span>
+                    <div class="column is-one-third">
+                        <div class="card project-card">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="img/iuticarte.svg" alt="IUT'icarte">
+                                </figure>
+                            </div>
+                            <div class="card-overlay">
+                                <h3 class="title is-4">IUT'icarte</h3>
+                                <time class="subtitle is-7">Oct - Déc 2024</time>
+                                <div class="content">
+                                    <p class="description">Objectif : Zéro Faim (ODD)</p>
+                                    <div class="tags">
+                                        <span class="tag is-link is-light">Figma</span>
+                                        <span class="tag is-info is-light">Cahier des charges</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            
-            <div class="column is-one-third">
-                <div class="card project-card">
-                    <div class="card-image">
-                        <figure class="image">
-                            <img src="img/portrait.svg" alt="Portrait">
-                        </figure>
-                    </div>
-                    <div class="card-overlay">
-                        <h3 class="title is-4">Portrait</h3>
-                        <time class="subtitle is-7">Oct 2024</time>
-                        <div class="content">
-                            <p class="description">Composition graphique</p>
-                            <div class="tags">
-                                <span class="tag is-link is-light">Affinity</span>
-                                <span class="tag is-primary is-light">Temps</span>
+
+                    <div class="column is-one-third">
+                        <div class="card project-card">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="img/portrait.svg" alt="Portrait">
+                                </figure>
+                            </div>
+                            <div class="card-overlay">
+                                <h3 class="title is-4">Portrait</h3>
+                                <time class="subtitle is-7">Oct 2024</time>
+                                <div class="content">
+                                    <p class="description">Composition graphique</p>
+                                    <div class="tags">
+                                        <span class="tag is-link is-light">Affinity</span>
+                                        <span class="tag is-primary is-light">Temps</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="column is-one-third">
-                <div class="card project-card">
-                    <div class="card-image">
-                        <figure class="image">
-                            <img src="img/Vertigo.png" alt="Vertigo">
-                        </figure>
-                    </div>
-                    <div class="card-overlay">
-                        <h3 class="title is-4">Vertigo</h3>
-                        <time class="subtitle is-7">Oct - Déc 2024</time>
-                        <div class="content">
-                            <p class="description">Analyse d'affiche</p>
-                            <div class="tags">
-                                <span class="tag is-link is-light">Analyse</span>
-                                <span class="tag is-info is-light">Affinity</span>
+                    <div class="column is-one-third">
+                        <div class="card project-card">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="img/Vertigo.png" alt="Vertigo">
+                                </figure>
+                            </div>
+                            <div class="card-overlay">
+                                <h3 class="title is-4">Vertigo</h3>
+                                <time class="subtitle is-7">Oct - Déc 2024</time>
+                                <div class="content">
+                                    <p class="description">Analyse d'affiche</p>
+                                    <div class="tags">
+                                        <span class="tag is-link is-light">Analyse</span>
+                                        <span class="tag is-info is-light">Affinity</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="column is-one-third">
-                <div class="card project-card">
-                    <div class="card-image">
-                        <figure class="image">
-                            <img src="img/Capture d'écran 2025-03-11 184936.png" alt="Silence des couloirs">
-                        </figure>
-                    </div>
-                    <div class="card-overlay">
-                        <h3 class="title is-4">Silence des couloirs</h3>
-                        <time class="subtitle is-7">Oct - Déc 2024</time>
-                        <div class="content">
-                            <p class="description">Court-métrage (2 min)</p>
-                            <div class="tags">
-                                <span class="tag is-danger is-light">DaVinci</span>
-                                <span class="tag is-warning is-light">Montage</span>
+                    <div class="column is-one-third">
+                        <div class="card project-card">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="img/Capture d'écran 2025-03-11 184936.png" alt="Silence des couloirs">
+                                </figure>
+                            </div>
+                            <div class="card-overlay">
+                                <h3 class="title is-4">Silence des couloirs</h3>
+                                <time class="subtitle is-7">Oct - Déc 2024</time>
+                                <div class="content">
+                                    <p class="description">Court-métrage (2 min)</p>
+                                    <div class="tags">
+                                        <span class="tag is-danger is-light">DaVinci</span>
+                                        <span class="tag is-warning is-light">Montage</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
-
-        </div>
-    </div>
-</section>
+        </section>
 
         <section class="pt-6 mt-6" id="formation">
-            <h1 class="title is-1 has-text-centered mb-0 mt-6">FORMATION</h1>
-            <h1 class="petit title is-size-2 has-text-centered mt-0 mb-6">et certication</h1>
+            <img src="img/Formations.svg" alt="Mes Projets" class="formation-title-img">
             <div class="card-container is-flex is-justify-content-center is-flex-direction-row mt-6">
                 <div>
                     <figure class="image-gauche mr-5">
@@ -747,6 +754,11 @@
 
     <footer>
         <div class="mt-6 mb-6"></div>
+            <hr class="calltoaction">
+            <p class="is-size-7 has-text-grey">
+                © 2026 Eva Briffaut — Réalisé avec ❤️ (et un peu de pluie bretonne 🌧️)
+            </p>
+        </footer>
     </footer>
 
 </body>
