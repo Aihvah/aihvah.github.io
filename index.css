@@ -1,3 +1,4 @@
+/* --- Base --- */
 html {
     scroll-behavior: smooth;
     background-color: #f3f4f1;
@@ -9,7 +10,16 @@ body {
     line-height: 1.6;
     cursor: url('./img/curseur.svg'), auto;
 }
+:root {
+    --primary-blue: #0051FF;
+    --soft-blue: #f0f5ff;
+    --text-light: #5f6368;
+}
+li {
+    list-style: none;
+}
 
+/* Curseur personnalisé pour les éléments interactifs */
 a,
 button,
 .navbar .clickable {
@@ -21,134 +31,11 @@ body:active {
 }
 
 
+/* --- Navbar --- */
 .navbar {
     background-color: #f3f4f1;
 
 }
-
-.title.minibio {
-    color: #0051FF;
-
-}
-
-h1.title {
-    color: #0051FF;
-}
-
-.minibio {
-    margin-top: 50px;
-}
-
-.calltoaction {
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-top: 10px;
-}
-
-footer {
-    margin-bottom: 80px;
-}
-
-
-/* Variables de couleurs pour gagner du temps */
-:root {
-    --primary-blue: #0051FF;
-    --soft-blue: #eef4ff;
-}
-
-/* Style de la signature */
-.signature-container {
-    width: 180px;
-    opacity: 0.8;
-    transition: opacity 0.3s;
-}
-
-.signature-container:hover {
-    opacity: 1;
-}
-
-/* Titre principal */
-.custom-title {
-    color: var(--primary-blue) !important;
-    font-weight: 800;
-    letter-spacing: -1px;
-    margin-bottom: 10px !important;
-}
-
-/* Mise en avant de texte */
-.highlight {
-    color: var(--primary-blue);
-    font-weight: bold;
-    border-bottom: 2px solid var(--primary-blue);
-}
-
-.tag-skill {
-    background: var(--soft-blue);
-    color: var(--primary-blue);
-    padding: 2px 8px;
-    border-radius: 5px;
-    font-size: 0.9em;
-}
-
-/* Image de profil stylisée */
-.profile-image-wrapper {
-    position: relative;
-    transition: transform 0.4s ease;
-}
-
-.profile-pic {
-    border: 8px solid white;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
-
-.profile-image-wrapper:hover {
-    transform: scale(1.03) rotate(2deg);
-}
-
-/* Badge flottant MMI 2 */
-.floating-badge {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background: var(--primary-blue);
-    color: white;
-    padding: 10px 15px;
-    border-radius: 50px;
-    font-weight: bold;
-    box-shadow: 0 4px 15px rgba(0, 81, 255, 0.4);
-}
-
-/* Espacement du texte */
-.interet-text p {
-    line-height: 1.7;
-    color: #4a4a4a;
-    margin-bottom: 1.5rem;
-}
-
-.icon {
-    color: #0051FF;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    margin-left: 50px;
-    margin-top: 15px;
-    width: 50px;
-    height: 50px;
-}
-
-.petit {
-    margin-top: 0;
-}
-
-.connection {
-    color: rgb(255, 255, 255);
-}
-
-.sae {
-    font-size: 35px;
-    line-height: 0.9;
-}
-
 .card_navbar {
     width: auto;
     position: fixed;
@@ -212,12 +99,156 @@ footer {
     transform: scale(0.95);
 }
 
-.image_profile {
-    width: 350px;
-    height: 350px;
-    margin-bottom: 10px;
+
+/* --- Accueil--- */
+.title.minibio {
+    color: #0051FF;
+
+}
+h1.title {
+    color: #0051FF;
 }
 
+.minibio {
+    margin-top: 50px;
+}
+
+.custom-title {
+    color: var(--primary-blue) !important;
+    font-weight: 900 !important;
+    letter-spacing: -2px !important;
+    font-size: 4.5rem !important;
+    line-height: 1.1;
+}
+
+.letter-spacing-2 {
+    letter-spacing: 2px;
+}
+
+.tag-skill {
+    background: var(--soft-blue);
+    color: var(--primary-blue);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: inline-block;
+    border: 1px solid rgba(0, 81, 255, 0.1);
+}
+
+.tag-skill:hover {
+    background: var(--primary-blue);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.quote-modern p{
+    border-left: 4px solid var(--primary-blue);
+    margin: 0;
+    padding-left: 1.5rem;
+    color: var(--primary-blue);
+}
+
+.interet-text p {
+    line-height: 1.8;
+    margin: 0;
+}
+.highlight {
+    color: var(--primary-blue);
+    font-weight: 700;
+    padding: 0 4px;
+    position: relative;
+    white-space: nowrap;
+}
+
+.highlight::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px; /* Ajuste la hauteur du trait */
+    width: 100%;
+    height: 12px; /* Épaisseur du trait */
+    background-color: rgba(0, 81, 255, 0.1); /* Bleu très clair transparent */
+    z-index: -1;
+    border-radius: 2px;
+}
+
+/* --- Machine à écrire --- */
+.cursor {
+    color: var(--primary-blue);
+    font-weight: bold;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+.blue-text {
+    color: var(--primary-blue);
+}
+
+/* --- Signature --- */
+.signature-container {
+    width: 350px;
+    opacity: 0.9;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin-bottom: 30px;
+}
+
+.signature-container:hover {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+/* Image de profil */
+.profile-image-wrapper {
+    position: relative;
+    max-width: 450px;
+    margin: 0 auto;
+    transition: transform 0.4s ease;
+}
+
+.profile-pic {
+    border: 8px solid white;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image-wrapper:hover {
+    transform: scale(1.03) rotate(2deg);
+}
+
+.floating-badge {
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    background: var(--primary-blue);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 0.9rem;
+    box-shadow: 0 8px 20px rgba(0, 81, 255, 0.4);
+    z-index: 2;
+}
+
+.interet-text p {
+    line-height: 1.7;
+    color: #4a4a4a;
+    margin-bottom: 1.5rem;
+}
+
+.icon {
+    color: #0051FF;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    margin-left: 50px;
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+/* --- Projets --- */
 .card_projet {
     max-height: 100px;
     overflow: hidden;
@@ -241,40 +272,113 @@ footer {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffffb2);
 }
 
-.card_formation {
-    width: 800px;
+/* --- Formations --- */
+:root {
+    --primary-blue: #0051FF;
+    --card-shadow: 0 15px 35px rgba(0, 81, 255, 0.08);
+    --card-hover: 0 20px 45px rgba(0, 81, 255, 0.15);
 }
 
-.card-content_formation {
-    max-height: 275px;
+.formation-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.formation-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.formation-card {
+    flex: 1;
+    max-width: 600px;
+    background: white;
+    border-radius: 24px;
+    padding: 35px;
+    box-shadow: var(--card-shadow);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(0, 81, 255, 0.05);
+}
+
+.formation-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--card-hover);
+    border-color: var(--primary-blue);
+}
+
+.date-tag {
+    background: rgba(0, 81, 255, 0.1);
+    color: var(--primary-blue);
+    padding: 6px 15px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.color-blue {
+    color: var(--primary-blue) !important;
+}
+
+.formation-image img {
+    width: 380px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: 0.4s ease;
+}
+
+.formation-row:hover .formation-image img {
+    transform: scale(1.03) rotate(1deg);
+}
+
+.card-inner.expandable {
+    max-height: 250px;
     overflow: hidden;
-    text-overflow: ellipsis;
     position: relative;
-    transition: max-height 0.7s ease-in;
+    transition: max-height 0.6s ease;
 }
 
-.card-content_formation:hover {
-    transition: max-height 0.7s ease-in-out;
+.formation-card:hover .card-inner.expandable {
     max-height: 800px;
-
 }
 
-.grid_formation.long::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2em;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffffb2);
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed #eee;
 }
 
-.image-formation {
-    width: 400px;
-    height: 285px;
-    border-radius: 15px;
+.dot {
+    height: 6px;
+    width: 6px;
+    background-color: var(--primary-blue);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: middle;
 }
 
+/* Responsive */
+@media (max-width: 1024px) {
+    .formation-row, .formation-row.reverse {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .formation-image img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* --- Engagements --- */
 .card_engagement {
     max-width: 500px;
 }
@@ -303,6 +407,7 @@ footer {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffffb2);
 }
 
+/* --- Interêts --- */
 .centredinterets {
     margin-left: 200px;
     margin-right: 200px;
@@ -313,6 +418,7 @@ footer {
     margin-top: 20px;
 }
 
+/* --- Contact --- */
 .card_contact {
     width: 773px;
     height: 300px;
@@ -331,14 +437,11 @@ footer {
     border-radius: 999px;
 }
 
-li {
-    list-style: none;
-}
+
 
 .card_competences {
     width: 220px;
     max-height: 170px;
-    /* Ajustez la hauteur pour masquer une partie du texte */
     overflow: hidden;
     text-overflow: ellipsis;
     position: relative;
@@ -386,12 +489,10 @@ li {
     margin: 40px auto 40px auto;
 }
 
-/* Container des cartes */
 .container {
     max-width: 1200px;
 }
 
-/* Style de la carte */
 .project-card {
     border-radius: 15px;
     overflow: hidden;
@@ -407,7 +508,6 @@ li {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* Image de fond */
 .project-card .card-image,
 .project-card .image {
     height: 100%;
@@ -423,17 +523,14 @@ li {
 
 .project-card:hover img {
     transform: scale(1.05);
-    /* Petit zoom sur l'image au survol */
 }
 
-/* Overlay (le texte sur l'image) */
 .card-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     padding: 25px 20px;
-    /* Dégradé pour la lisibilité */
     background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 60%, transparent 100%);
     color: white;
     display: flex;
@@ -441,7 +538,6 @@ li {
     justify-content: flex-end;
 }
 
-/* Typographie dans l'overlay */
 .card-overlay .title {
     color: white !important;
     margin-bottom: 5px !important;
@@ -461,7 +557,16 @@ li {
     color: #eeeeee;
 }
 
-/* Ajustement des tags */
 .card-overlay .tags {
     margin-top: 5px;
+}
+
+.calltoaction {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 10px;
+}
+
+footer {
+    margin-bottom: 80px;
 }

@@ -40,8 +40,8 @@
 
     <main>
         <section id="accueil" class="section">
-            <div class="container">
-                <div class="is-flex is-justify-content-center mb-6">
+            <div class="container py-6">
+                <div class="is-flex is-justify-content-center mb-6 pt-5">
                     <figure class="image signature-container">
                         <img src="img/signature.svg" alt="Eva Briffaut Signature" />
                     </figure>
@@ -49,32 +49,34 @@
 
                 <div class="columns is-vcentered is-variable is-8">
                     <div class="column is-6">
-                        <div class="bio-content">
-                            <h1 class="title is-size-1 custom-title">Eva Briffaut</h1>
-                            <p class="subtitle is-size-4 has-text-weight-light mb-5">
-                                Étudiante en <span class="highlight">BUT MMI</span> & Exploratrice Créative
+                        <div class="bio-content pr-5">
+                            <h1 class="title is-size-1 custom-title mb-2">Eva Briffaut</h1>
+
+                            <p class="subtitle is-size-4 has-text-weight-light mb-6">
+                                Étudiante en <span class="highlight">BUT MMI</span> &
+                                <span id="typewriter" class="blue-text"></span><span class="cursor">|</span>
                             </p>
 
                             <div class="content interet-text">
-                                <p>
-                                    J’ai 19 ans et je suis à Lannion, dans les Côtes-d’Armor. J’habite dans le 22 où il
-                                    ne pleut pas toujours…
-                                    juste un peu plus souvent qu’ailleurs ! ☀️
+                                <p class="is-size-5 has-text-grey-darker mb-5">
+                                    Basée à <strong>Lannion</strong>, je forge mon parcours au cœur du 22. Entre deux
+                                    averses bretonnes, je transforme des idées brutes en récits visuels percutants. ☀️
                                 </p>
-                                <p>
-                                    <strong>Mon projet :</strong> Me lancer dans des aventures mêlant
-                                    <span class="tag-skill">Graphisme</span> et <span
-                                        class="tag-skill">Audiovisuel</span>.
-                                </p>
-                                <p>
-                                    Inspirée par l'univers de YouTube, je me passionne pour le <strong>montage
-                                        vidéo</strong>.
-                                    J’adore voir une idée brute se transformer petit à petit en un projet concret et
-                                    abouti.
-                                </p>
-                                <p class="is-italic has-text-info mt-5">
-                                    "En route pour les étoiles ! Venez visiter mes projets !"
-                                </p>
+
+                                <div class="expertises-box mb-6">
+                                    <p class="is-uppercase is-size-7 has-text-weight-bold letter-spacing-2 mb-3">Mes
+                                        Domaines</p>
+                                    <div class="tags-group">
+                                        <span class="tag-skill">Graphisme</span>
+                                        <span class="tag-skill">Audiovisuel</span>
+                                        <span class="tag-skill">Montage Vidéo</span>
+                                    </div>
+                                </div>
+                                <div class="quote-modern">
+                                    <p class="is-italic is-size-5">
+                                        "En route pour les étoiles ! Venez visiter mes projets !"
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -92,7 +94,7 @@
         </section>
 
 
-        <section class="projets_marge pt-6" id="projets">
+        <section class="pt-3" id="projets">
             <img src="img/projet.svg" alt="Mes Projets" class="projet-title-img">
 
             <div class="container px-4">
@@ -229,142 +231,68 @@
             </div>
         </section>
 
-        <section class="pt-6 mt-6" id="formation">
-            <img src="img/Formations.svg" alt="Mes Projets" class="formation-title-img">
-            <div class="card-container is-flex is-justify-content-center is-flex-direction-row mt-6">
-                <div>
-                    <figure class="image-gauche mr-5">
-                        <img class="image-formation" src="img/bafa.svg" alt="Psc1" />
-                    </figure>
-                </div>
-                <div class="card card_formation">
-                    <div class="grid grid_formation ">
-                        <div class="card-content card-content_formation">
-                            <div class="content">
-                                <h3 class="is-size-3 m-0 has-text-weight-bold">Formation générale du BAFA</h3>
-                                <h4 class="datetime is-size-4 mt-0 mb-0 is-italic">Avr-2025</h4>
-                                <h5 class="datetime is-size-5 mt-0 mb-4">UFCV - Bretagne</h5>
-                                <p>Le <b>Brevet d'Aptitude ax Fonctions d'Animateurs</b> (BAFA) prépare à l'exercice des
-                                    fonctions d'animation en accueil collectif de mineurs</p>
-                            </div>
-                        </div>
+        <section class="section py-6" id="formation">
+            <div class="has-text-centered mb-6">
+                <img src="img/Formations.svg" alt="Mes Formations" class="formation-title-img">
+            </div>
 
+            <div class="container">
+                <div class="formation-row" data-aos="fade-up">
+                    <div class="formation-image">
+                        <img src="img/bafa.svg" alt="BAFA" />
+                    </div>
+                    <div class="formation-card">
+                        <div class="card-inner">
+                            <span class="date-tag">Avril 2025</span>
+                            <h3 class="title is-3 color-blue">Formation générale du BAFA</h3>
+                            <h5 class="subtitle is-5 has-text-weight-medium">UFCV - Bretagne</h5>
+                            <p class="description">
+                                Préparation aux fonctions d'animation en <strong>accueil collectif de mineurs</strong>.
+                                Un engagement tourné vers l'humain et la pédagogie.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card-container is-flex is-justify-content-center is-flex-direction-row mt-6">
-                <div class="card card_formation">
-                    <div class="grid grid_formation long">
-                        <div class="card-content card-content_formation">
-                            <div class="content">
-                                <h3 class="is-size-3 m-0 has-text-weight-bold">Bachelor Universitaire Technologique MMI
-                                </h3>
-                                <h4 class="datetime is-size-4 mt-0 mb-0 is-italic">2024 - 2027</h4>
-                                <h5 class="datetime is-size-5 mt-0 mb-4">IUT de Lannion - 22300</h5>
-                                <p><b>Durée :</b> Formation en 3 ans (Bac+3).</p>
-                                <p><b>Objectifs :</b> Préparer aux métiers du digital, de la communication et de la
-                                    création
-                                    multimédia.</p>
-                                <p><b>Compétences enseignées :</b>
-                                <ul>
-                                    <li><b>Développement web :</b> création de sites et applications web.</li>
-                                    <li><b>Design graphique :</b> conception visuelle et outils de création.</li>
-                                    <li><b>Audiovisuel :</b> montage vidéo, production sonore, storytelling.</li>
-                                    <li><b>Communication :</b> rédaction, stratégie digitale, community management.</li>
-                                    <li><b>Gestion de projet :</b> coordination et suivi de projets numériques.</li>
-                                </ul>
-                                <b>Atout principal :</b> Une formation polyvalente alliant créativité, technique et
-                                stratégie.
 
-                                </p>
+                <div class="formation-row reverse" data-aos="fade-up">
+                    <div class="formation-image">
+                        <img src="img/iut.svg" alt="IUT Lannion" />
+                    </div>
+                    <div class="formation-card mmi-highlight">
+                        <div class="card-inner expandable">
+                            <span class="date-tag">2024 — 2027</span>
+                            <h3 class="title is-3 color-blue">BUT MMI</h3>
+                            <h5 class="subtitle is-5">IUT de Lannion</h5>
 
+                            <div class="mmi-details">
+                                <p class="mb-3">Formation polyvalente en 3 ans alliant technique et créativité.</p>
+                                <div class="skills-grid">
+                                    <span><i class="dot"></i> Développement Web</span>
+                                    <span><i class="dot"></i> Design Graphique</span>
+                                    <span><i class="dot"></i> Audiovisuel</span>
+                                    <span><i class="dot"></i> Stratégie de Com</span>
+                                </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-                <div>
-                    <figure class="ml-5 is-4by3">
-                        <img class="image-formation" src="img/iut.svg" alt="IUT Lannion" />
-                    </figure>
-                </div>
-            </div>
-            <div class="card-container is-flex is-justify-content-center is-flex-direction-row mt-6">
-                <div>
-                    <figure class="image-gauche mr-5">
-                        <img class="image-formation" src="img/Psc1.svg" alt="Psc1" />
-                    </figure>
-                </div>
-                <div class="card card_formation">
-                    <div class="grid grid_formation ">
-                        <div class="card-content card-content_formation">
-                            <div class="content">
-                                <h3 class="is-size-3 m-0 has-text-weight-bold">PSC1 Formation au premier secours</h3>
-                                <h4 class="datetime is-size-4 mt-0 mb-0 is-italic">Oct-2024</h4>
-                                <h5 class="datetime is-size-5 mt-0 mb-4">IUT de Lannion - 22300</h5>
-                                <p>Le <b>Premiers Secours Citoyen</b> (PSC) est la formation de base aux premiers
-                                    secours en
-                                    France.</p>
-                            </div>
-                        </div>
 
+                <div class="formation-row" data-aos="fade-up">
+                    <div class="formation-image">
+                        <img src="img/Psc1.svg" alt="PSC1" />
                     </div>
-                </div>
-            </div>
-            <div class="card-container is-flex is-justify-content-center is-flex-direction-row mt-6">
-                <div class="card card_formation">
-                    <div class="grid grid_formation">
-                        <div class="card-content card-content_formation">
-                            <div class="content">
-                                <h3 class="is-size-3 m-0 has-text-weight-bold">Certification PIX</h3>
-                                <h4 class="datetime is-size-4 mt-0 mb-0 is-italic">2024 & 2025</h4>
-                                <h5 class="datetime is-size-4 mt-0 mb-0">IUT de Lannion - 22300</h5>
-                                <h5 class="datetime is-size-4 mt-0 mb-4">Lycée Bertrand d’Argentré - Vitré 35500</h5>
-                                <p>Elle permet d'évaluer, de développer et de certifier des compétences numériques</p>
-                            </div>
+                    <div class="formation-card">
+                        <div class="card-inner">
+                            <span class="date-tag">Octobre 2024</span>
+                            <h3 class="title is-4">PSC1 • Premiers Secours</h3>
+                            <h5 class="subtitle is-6">IUT de Lannion</h5>
+                            <p class="description small">Formation de base aux gestes de premiers secours citoyens.</p>
                         </div>
-
-                    </div>
-                </div>
-                <div>
-                    <figure class="ml-5 is-4by3">
-                        <img class="image-formation" src="img/pix.svg" alt="PIX" />
-                    </figure>
-                </div>
-            </div>
-            <div>
-            </div>
-            </div>
-            <div class="card-container is-flex is-justify-content-center is-flex-direction-row mt-6">
-                <div>
-                    <figure class="image-gauche mr-5">
-                        <img class="image-formation" src="img/lba.svg" alt="Lycée" />
-                    </figure>
-                </div>
-                <div class="card card_formation">
-                    <div class="grid grid_formation long ">
-                        <div class="card-content card-content_formation">
-                            <div class="content">
-                                <h3 class="is-size-3 m-0 has-text-weight-bold">BACCALAUREAT GENERAL - mention Bien</h3>
-                                <h4 class="datetime is-size-4 mt-0 mb-0 is-italic">2024</h4>
-                                <h5 class="datetime is-size-5 mt-0 mb-4">Lycée Bertrand d’Argentré - Vitré 35500</h5>
-                                <p><b>Spécialités :</b>
-                                <ul>
-                                    <li>Mathématiques</li>
-                                    <li>Sciences Economiques et Sociales</li>
-                                </ul>
-                                <b>Autre mention :</b>
-                                <ul>
-                                    <li>DNL (discipline non linguistique) SES</li>
-                                </ul>
-                                </p>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="pt-6 mt-6" id="moi">
             <h1 class="title is-1 has-text-centered mb-0 mt-6">EXPERIENCE </h1>
             <h1 class="petit title is-1 has-text-centered mb-6">PROFFESSIONNELLE</h1>
@@ -754,20 +682,50 @@
 
     <footer>
         <div class="mt-6 mb-6"></div>
-            <hr class="calltoaction">
-            <p class="is-size-7 has-text-grey">
-                © 2026 Eva Briffaut — Réalisé avec ❤️ (et un peu de pluie bretonne 🌧️)
-            </p>
-        </footer>
+        <hr class="calltoaction">
+        <p class="is-size-7 has-text-grey">
+            © 2026 Eva Briffaut — Réalisé avec ❤️ (et un peu de pluie bretonne 🌧️)
+        </p>
+    </footer>
     </footer>
 
 </body>
+
 <script>
     const cursor = document.querySelector('.custom-cursor');
     document.addEventListener('mousemove', (e) => {
         cursor.style.left = e.clientX + 'px';
         cursor.style.top = e.clientY + 'px';
     });
+    const typewriter = document.getElementById('typewriter');
+    const words = ['Animatrice', 'Graphiste', 'Monteuse vidéo', 'Codeuse (parfois)'];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+        const currentWord = words[wordIndex];
+
+        if (isDeleting) {
+            typewriter.textContent = currentWord.substring(0, charIndex - 1);
+            charIndex--;
+        } else {
+            typewriter.textContent = currentWord.substring(0, charIndex + 1);
+            charIndex++;
+        }
+        let typeSpeed = isDeleting ? 50 : 150;
+        if (!isDeleting && charIndex === currentWord.length) {
+            isDeleting = true;
+            typeSpeed = 2000;
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+            typeSpeed = 500;
+        }
+
+        setTimeout(type, typeSpeed);
+    }
+    document.addEventListener('DOMContentLoaded', type);
 </script>
 
 </html>
