@@ -10,11 +10,13 @@ body {
     line-height: 1.6;
     cursor: url('./img/curseur.svg'), auto;
 }
+
 :root {
     --primary-blue: #0051FF;
     --soft-blue: #f0f5ff;
     --text-light: #5f6368;
 }
+
 li {
     list-style: none;
 }
@@ -36,6 +38,7 @@ body:active {
     background-color: #f3f4f1;
 
 }
+
 .card_navbar {
     width: auto;
     position: fixed;
@@ -105,6 +108,7 @@ body:active {
     color: #0051FF;
 
 }
+
 h1.title {
     color: #0051FF;
 }
@@ -142,7 +146,7 @@ h1.title {
     transform: translateY(-2px);
 }
 
-.quote-modern p{
+.quote-modern p {
     border-left: 4px solid var(--primary-blue);
     margin: 0;
     padding-left: 1.5rem;
@@ -153,6 +157,7 @@ h1.title {
     line-height: 1.8;
     margin: 0;
 }
+
 .highlight {
     color: var(--primary-blue);
     font-weight: 700;
@@ -165,10 +170,13 @@ h1.title {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 5px; /* Ajuste la hauteur du trait */
+    bottom: 5px;
+    /* Ajuste la hauteur du trait */
     width: 100%;
-    height: 12px; /* Épaisseur du trait */
-    background-color: rgba(0, 81, 255, 0.1); /* Bleu très clair transparent */
+    height: 12px;
+    /* Épaisseur du trait */
+    background-color: rgba(0, 81, 255, 0.1);
+    /* Bleu très clair transparent */
     z-index: -1;
     border-radius: 2px;
 }
@@ -181,9 +189,17 @@ h1.title {
 }
 
 @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
 }
+
 .blue-text {
     color: var(--primary-blue);
 }
@@ -328,7 +344,7 @@ h1.title {
     height: auto;
     object-fit: cover;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transition: 0.4s ease;
 }
 
@@ -368,10 +384,13 @@ h1.title {
 
 /* Responsive */
 @media (max-width: 1024px) {
-    .formation-row, .formation-row.reverse {
+
+    .formation-row,
+    .formation-row.reverse {
         flex-direction: column;
         padding: 0 20px;
     }
+
     .formation-image img {
         width: 100%;
         height: 100%;
