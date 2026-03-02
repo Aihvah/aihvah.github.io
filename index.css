@@ -368,11 +368,13 @@ h1.title {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
+
 .dashed {
     border-top: 1px dashed #eee;
     margin-top: 20px;
     padding-top: 15px;
 }
+
 .dot {
     height: 6px;
     width: 6px;
@@ -489,47 +491,22 @@ h1.title {
 
 
 
-.card_competences {
-    width: 220px;
-    max-height: 170px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    position: relative;
-    transition: max-height 0.7s ease-in;
-
+/* --- Global Helpers --- */
+.color-blue {
+    color: var(--primary-blue) !important;
 }
 
-.card_competences:hover {
-    transition: max-height 0.7s ease-in-out;
-    max-height: 900px;
+/* Grille Responsive */
+@media (max-width: 1024px) {
+    .column.is-4 {
+        width: 50% !important;
+    }
 }
 
-.card_competences::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2em;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffffb2);
-}
-
-.icon-competences {
-    font-size: 90px;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    color: #0051FF;
-}
-
-.projets_marge {
-    margin-top: 150px;
-}
-
-.projet-title-img {
-    width: 400px;
-    height: auto;
-    display: block;
-    margin: 40px auto 40px auto;
+@media (max-width: 768px) {
+    .column.is-4 {
+        width: 100% !important;
+    }
 }
 
 .title-img {
