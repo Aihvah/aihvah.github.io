@@ -145,55 +145,80 @@ h1.title {
 .skill-card {
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(12px);
-    border-radius: 28px;
+    border-radius: 24px;
     border: 1px solid rgba(255, 255, 255, 0.4);
-    box-shadow: 0 8px 32px rgba(0, 81, 255, 0.05);
-    padding: 2rem;
+    box-shadow: 0 10px 40px rgba(0, 81, 255, 0.05);
+    padding: 1.5rem 1.2rem;
     height: 100%;
-    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skill-card.compact {
+    padding: 1.2rem 1rem;
+    min-height: auto;
+}
+
+.skill-card.compact .skill-icon-outer {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 0.8rem;
+    border-radius: 12px;
+}
+
+.skill-card.compact .skill-icon-outer i {
+    font-size: 1.2rem;
+}
+
+.skill-card.compact .skill-title {
+    font-size: 1rem;
+    margin-bottom: 0;
 }
 
 .skill-card:hover {
-    transform: translateY(-8px);
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 20px 40px rgba(0, 81, 255, 0.12);
-    border-color: rgba(0, 81, 255, 0.2);
+    transform: translateY(-12px) scale(1.02);
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 30px 60px rgba(0, 81, 255, 0.15);
+    border-color: rgba(0, 81, 255, 0.3);
 }
 
-.skill-card::before {
+.skill-card::after {
     content: "";
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary-blue), #60a5fa);
+    height: 6px;
+    background: linear-gradient(90deg, #0051FF, #00C2FF);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
-.skill-card:hover::before {
+.skill-card:hover::after {
     opacity: 1;
 }
 
 .skill-icon-outer {
-    width: 65px;
-    height: 65px;
-    background: var(--soft-blue);
-    border-radius: 18px;
+    width: 55px;
+    height: 55px;
+    background: linear-gradient(135deg, var(--soft-blue) 0%, #e0e9ff 100%);
+    border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.5rem;
-    transition: all 0.3s ease;
+    margin-bottom: 1.2rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 8px 20px rgba(0, 81, 255, 0.1);
 }
 
 .skill-card:hover .skill-icon-outer {
-    background: var(--primary-blue);
-    color: white !important;
-    transform: rotate(8deg);
+    transform: rotateY(180deg) scale(1.1);
+    background: linear-gradient(135deg, var(--primary-blue) 0%, #00C2FF 100%);
 }
 
 .skill-card:hover .skill-icon-outer i {
@@ -202,50 +227,127 @@ h1.title {
 
 .skill-title {
     font-weight: 800;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
-    color: #1a1a1b;
+    background: linear-gradient(135deg, #1a1a1b 0%, #4a4a4a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.5px;
 }
 
 .skill-list {
     margin: 0;
     padding: 0;
     list-style: none;
+    width: 100%;
 }
 
 .skill-list li {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: #4b5563;
-    margin-bottom: 0.5rem;
-    display: flex;
-    align-items: center;
+    margin-bottom: 0.4rem;
+    padding: 6px 12px;
+    background: rgba(0, 81, 255, 0.03);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
 }
 
-.skill-list li::before {
-    content: "→";
-    margin-right: 8px;
+.skill-card:hover .skill-list li {
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transform: translateX(5px);
+    border-color: rgba(0, 81, 255, 0.1);
+}
+
+.skill-list li b {
     color: var(--primary-blue);
-    font-weight: bold;
-    font-size: 0.8rem;
 }
 
-/* Soft Skills Layout */
-.soft-skills-card {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(240, 245, 255, 0.5));
-    border: 1px solid rgba(0, 81, 255, 0.15);
+/* Soft Skills Layout - Bento Grid */
+.bento-grid-container {
+    margin-top: 3rem;
 }
 
-.tags-skills-container {
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(160px, auto);
+    gap: 20px;
+}
+
+.bento-item {
+    background: white;
+    border-radius: 32px;
+    padding: 30px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    gap: 12px;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(0, 81, 255, 0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    position: relative;
+    overflow: hidden;
 }
 
-.tag-skill:hover {
-    background: var(--primary-blue);
+.bento-item i {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: var(--primary-blue);
+    transition: transform 0.4s ease;
+}
+
+.bento-item span {
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #1a1a1b;
+}
+
+.bento-item:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 81, 255, 0.12);
+    border-color: rgba(0, 81, 255, 0.2);
+}
+
+.bento-item:hover i {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Bento Variations */
+.bento-item.accent {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, #00C2FF 100%);
+}
+
+.bento-item.accent i,
+.bento-item.accent span {
     color: white;
-    transform: translateY(-2px);
+}
+
+.bento-item.wide {
+    grid-column: span 2;
+}
+
+.bento-item.tall {
+    grid-row: span 2;
+}
+
+@media (max-width: 1024px) {
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bento-item.wide {
+        grid-column: span 1;
+    }
 }
 
 .quote-modern p {
@@ -774,6 +876,10 @@ h1.title {
     margin-left: 150px;
     margin-right: 150px;
     margin-top: 10px;
+}
+
+footer {
+    margin-bottom: 80px;
 }
 
 footer {
