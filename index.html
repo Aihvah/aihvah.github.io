@@ -422,152 +422,215 @@
                         <img src="img/Compétences.svg" alt="Mes Compétences" class="title-img mb-6">
                     </div>
 
-                    <!-- Compétences Ultra-Compactes (4 colonnes) -->
-                    <div class="columns is-multiline is-centered">
-                        <!-- Audiovisuel -->
-                        <div class="column is-3">
-                            <div class="skill-card">
-                                <div class="skill-icon-outer text-blue">
-                                    <i class="fa-solid fa-camera fa-lg"></i>
+                    <!-- Compétences Carrousel Infini Manuel -->
+                    <div class="skills-carousel-wrapper mt-4 mb-6">
+                        <button class="carousel-arrow left" onclick="scrollSkillsCarousel(-300)" aria-label="Défiler à gauche">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+
+                        <div class="skills-carousel-container" id="manual-skills-container">
+                            <div class="skills-carousel-track" id="infinite-skills-track">
+                                
+                                <!-- 1. Audiovisuel -->
+                                <div class="carousel-item-skill">
+                                    <div class="skill-card-uniform">
+                                        <div class="skill-icon-wrapper"><i class="fa-solid fa-film"></i></div>
+                                        <h3>Audiovisuel</h3>
+                                        <div class="skill-tags-bottom">
+                                            <span class="tag">DaVinci Resolve</span>
+                                            <span class="tag">Audacity</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <h3 class="skill-title">Audiovisuel</h3>
-                                <ul class="skill-list">
-                                    <li><b>Montage :</b> DaVinci</li>
-                                    <li><b>Son :</b> Audacity</li>
-                                </ul>
+
+                                <!-- 2. Créativité -->
+                                <div class="carousel-item-skill">
+                                    <div class="skill-card-uniform">
+                                        <div class="skill-icon-wrapper"><i class="fa-solid fa-lightbulb"></i></div>
+                                        <h3>Créativité</h3>
+                                        <div class="skill-tags-bottom">
+                                            <span class="tag soft-tag-alt">Idéation</span>
+                                            <span class="tag soft-tag-alt">Conception</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 3. Graphisme -->
+                                <div class="carousel-item-skill">
+                                    <div class="skill-card-uniform">
+                                        <div class="skill-icon-wrapper"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                                        <h3>Graphisme</h3>
+                                        <div class="skill-tags-bottom">
+                                            <span class="tag">Adobe CC</span>
+                                            <span class="tag">Affinity</span>
+                                            <span class="tag">Figma</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 4. Communication -->
+                                <div class="carousel-item-skill">
+                                    <div class="skill-card-uniform">
+                                        <div class="skill-icon-wrapper"><i class="fa-solid fa-comments"></i></div>
+                                        <h3>Communication</h3>
+                                        <div class="skill-tags-bottom">
+                                            <span class="tag soft-tag-alt">Orale</span>
+                                            <span class="tag soft-tag-alt">Écrite</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 5. Dév Web -->
+                                <div class="carousel-item-skill">
+                                    <div class="skill-card-uniform">
+                                        <div class="skill-icon-wrapper"><i class="fa-solid fa-code"></i></div>
+                                        <h3>Dév Web</h3>
+                                        <div class="skill-tags-bottom">
+                                            <span class="tag">HTML/CSS</span>
+                                            <span class="tag">JS / Bulma</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 6. Collaboration -->
+                                <div class="carousel-item-skill">
+                                    <div class="skill-card-uniform">
+                                        <div class="skill-icon-wrapper"><i class="fa-solid fa-users"></i></div>
+                                        <h3>Collaboration</h3>
+                                        <div class="skill-tags-bottom">
+                                            <span class="tag soft-tag-alt">Esprit d'équipe</span>
+                                            <span class="tag soft-tag-alt">Entraide</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 7. Marketing -->
+                                <div class="carousel-item-skill">
+                                    <div class="skill-card-uniform">
+                                        <div class="skill-icon-wrapper"><i class="fa-solid fa-bullseye"></i></div>
+                                        <h3>Marketing</h3>
+                                        <div class="skill-tags-bottom">
+                                            <span class="tag">Stratégie</span>
+                                            <span class="tag">Réseaux</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 8. Autonomie -->
+                                <div class="carousel-item-skill">
+                                    <div class="skill-card-uniform">
+                                        <div class="skill-icon-wrapper"><i class="fa-solid fa-user-gear"></i></div>
+                                        <h3>Autonomie</h3>
+                                        <div class="skill-tags-bottom">
+                                            <span class="tag soft-tag-alt">Proactivité</span>
+                                            <span class="tag soft-tag-alt">Initiative</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 9. Projet -->
+                                <div class="carousel-item-skill">
+                                    <div class="skill-card-uniform">
+                                        <div class="skill-icon-wrapper"><i class="fa-solid fa-list-check"></i></div>
+                                        <h3>Projet</h3>
+                                        <div class="skill-tags-bottom">
+                                            <span class="tag">Notion</span>
+                                            <span class="tag">Cahier Charges</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 10. Organisation -->
+                                <div class="carousel-item-skill">
+                                    <div class="skill-card-uniform">
+                                        <div class="skill-icon-wrapper"><i class="fa-solid fa-calendar-check"></i></div>
+                                        <h3>Organisation</h3>
+                                        <div class="skill-tags-bottom">
+                                            <span class="tag soft-tag-alt">Méthode</span>
+                                            <span class="tag soft-tag-alt">Rigueur</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 11. Animation -->
+                                <div class="carousel-item-skill">
+                                    <div class="skill-card-uniform">
+                                        <div class="skill-icon-wrapper"><i class="fa-solid fa-campground"></i></div>
+                                        <h3>Animation</h3>
+                                        <div class="skill-tags-bottom">
+                                            <span class="tag">BAFA</span>
+                                            <span class="tag">Groupe</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 12. Esprit Critique -->
+                                <div class="carousel-item-skill">
+                                    <div class="skill-card-uniform">
+                                        <div class="skill-icon-wrapper"><i class="fa-solid fa-brain"></i></div>
+                                        <h3>Esprit Critique</h3>
+                                        <div class="skill-tags-bottom">
+                                            <span class="tag soft-tag-alt">Analyse</span>
+                                            <span class="tag soft-tag-alt">Recul</span>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
 
-                        <!-- Créativité & Innovation (Soft) -->
-                        <div class="column is-3">
-                            <div class="skill-card compact">
-                                <div class="skill-icon-outer text-blue">
-                                    <i class="fa-solid fa-lightbulb"></i>
-                                </div>
-                                <h3 class="skill-title">Créativité</h3>
-                            </div>
-                        </div>
-
-                        <!-- Graphisme -->
-                        <div class="column is-3">
-                            <div class="skill-card">
-                                <div class="skill-icon-outer text-blue">
-                                    <i class="fa-solid fa-object-group fa-lg"></i>
-                                </div>
-                                <h3 class="skill-title">Graphisme</h3>
-                                <ul class="skill-list">
-                                    <li><b>Design :</b> Adobe, Affinity</li>
-                                    <li><b>UI :</b> Figma</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Communication (Soft) -->
-                        <div class="column is-3">
-                            <div class="skill-card compact">
-                                <div class="skill-icon-outer text-blue">
-                                    <i class="fa-solid fa-comments"></i>
-                                </div>
-                                <h3 class="skill-title">Communication</h3>
-                            </div>
-                        </div>
-
-                        <!-- Dev Web -->
-                        <div class="column is-3">
-                            <div class="skill-card">
-                                <div class="skill-icon-outer text-blue">
-                                    <i class="fa-solid fa-code fa-lg"></i>
-                                </div>
-                                <h3 class="skill-title">Dév Web</h3>
-                                <ul class="skill-list">
-                                    <li><b>Front :</b> HTML, CSS, JS</li>
-                                    <li><b>Framework :</b> Bulma</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Collaboration (Soft) -->
-                        <div class="column is-3">
-                            <div class="skill-card compact">
-                                <div class="skill-icon-outer text-blue">
-                                    <i class="fa-solid fa-users"></i>
-                                </div>
-                                <h3 class="skill-title">Collaboration</h3>
-                            </div>
-                        </div>
-
-                        <!-- Marketing & Com -->
-                        <div class="column is-3">
-                            <div class="skill-card">
-                                <div class="skill-icon-outer text-blue">
-                                    <i class="fa-solid fa-chart-simple fa-lg"></i>
-                                </div>
-                                <h3 class="skill-title">Marketing</h3>
-                                <ul class="skill-list">
-                                    <li><b>Stratégie :</b> Plans Com</li>
-                                    <li><b>Social :</b> Contenu</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Autonomie (Soft) -->
-                        <div class="column is-3">
-                            <div class="skill-card compact">
-                                <div class="skill-icon-outer text-blue">
-                                    <i class="fa-solid fa-user-gear"></i>
-                                </div>
-                                <h3 class="skill-title">Autonomie</h3>
-                            </div>
-                        </div>
-
-                        <!-- Gestion de projet -->
-                        <div class="column is-3">
-                            <div class="skill-card">
-                                <div class="skill-icon-outer text-blue">
-                                    <i class="fa-solid fa-folder-open fa-lg"></i>
-                                </div>
-                                <h3 class="skill-title">Projet</h3>
-                                <ul class="skill-list">
-                                    <li><b>Outils :</b> Notion</li>
-                                    <li><b>Doc :</b> Cahier charges</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Organisation (Soft) -->
-                        <div class="column is-3">
-                            <div class="skill-card compact">
-                                <div class="skill-icon-outer text-blue">
-                                    <i class="fa-solid fa-calendar-check"></i>
-                                </div>
-                                <h3 class="skill-title">Organisation</h3>
-                            </div>
-                        </div>
-
-                        <!-- Animation -->
-                        <div class="column is-3">
-                            <div class="skill-card">
-                                <div class="skill-icon-outer text-blue">
-                                    <i class="fa-solid fa-child-reaching fa-lg"></i>
-                                </div>
-                                <h3 class="skill-title">Animation</h3>
-                                <ul class="skill-list">
-                                    <li><b>Groupe :</b> Dynamiser</li>
-                                    <li><b>Cadre :</b> Sécurité</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Esprit Critique (Soft) -->
-                        <div class="column is-3">
-                            <div class="skill-card compact">
-                                <div class="skill-icon-outer text-blue">
-                                    <i class="fa-solid fa-brain"></i>
-                                </div>
-                                <h3 class="skill-title">Esprit Critique</h3>
-                            </div>
-                        </div>
+                        <button class="carousel-arrow right" onclick="scrollSkillsCarousel(300)" aria-label="Défiler à droite">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
                     </div>
+
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function() {
+                            const track = document.getElementById('infinite-skills-track');
+                            const container = document.getElementById('manual-skills-container');
+                            
+                            if (track && container) {
+                                const originalItems = Array.from(track.children);
+                                
+                                // Dupliquer les compétences 5 fois pour donner l'impression d'infini
+                                for(let i = 0; i < 5; i++) {
+                                    originalItems.forEach(item => {
+                                        track.appendChild(item.cloneNode(true));
+                                    });
+                                }
+
+                                // Centrer le scroll au milieu une fois chargé pour pouvoir défiler à gauche ou à droite tout de suite
+                                setTimeout(() => {
+                                    const totalWidth = container.scrollWidth;
+                                    container.scrollLeft = totalWidth / 3;
+                                }, 100);
+
+                                // Logique de scroll en boucle invisible (si on approche des bords)
+                                container.addEventListener('scroll', () => {
+                                    const maxScroll = container.scrollWidth - container.clientWidth;
+                                    
+                                    if (container.scrollLeft >= maxScroll - 50) {
+                                        // On atteint la fin, retour au milieu en désactivant temporairement l'animation
+                                        container.style.scrollBehavior = 'auto'; 
+                                        container.scrollLeft = maxScroll / 2;
+                                        container.style.scrollBehavior = 'smooth';
+                                    } else if (container.scrollLeft <= 50) {
+                                        // On atteint le début, retour au milieu
+                                        container.style.scrollBehavior = 'auto';
+                                        container.scrollLeft = maxScroll / 2;
+                                        container.style.scrollBehavior = 'smooth';
+                                    }
+                                });
+                            }
+                        });
+
+                        function scrollSkillsCarousel(amount) {
+                            const container = document.getElementById('manual-skills-container');
+                            if (container) {
+                                container.scrollBy({ left: amount, behavior: 'smooth' });
+                            }
+                        }
+                    </script>
                 </div>
             </section>
             </div>
@@ -577,61 +640,55 @@
         <section id="engagement" class="section pt-6 mt-6" id="moi">
             <h1 class="title is-1 has-text-centered mb-6 mt-6">ENGAGEMENT</h1>
             <div class="container">
-                <div class="columns is-centered is-multiline">
+                <div class="columns is-centered">
                     <div class="column is-10">
-                        <div class="card card-experience featured">
-                            <div class="card-content card-content_experience">
-                                <div class="content">
-                                    <h3 class="is-size-3 m-0 has-text-weight-bold color-blue">Association - MMI WAVE
-                                    </h3>
-                                    <h4 class="datetime is-size-4 mt-0 mb-4 is-italic">2024 - 2025</h4>
-                                    <div class="columns">
-                                        <div class="column is-8">
-                                            <p class="is-size-5 mb-4">
-                                                Mon terrain de jeu créatif. En tant que graphiste, je traduis
-                                                l'énergie de l'asso en <span class="text-highlight">visuels
-                                                    percutants</span>. C'est ici que je vis la <span
-                                                    class="text-highlight">force du collectif</span> :
-                                                brainstormings électriques et projets caritatifs qui ont du sens.
-                                            </p>
-                                            <div class="tags">
-                                                <span class="tag is-info is-light">Direction artistique</span>
-                                                <span class="tag is-info is-light">Synergie d'équipe</span>
-                                                <span class="tag is-info is-light">Impact social</span>
-                                            </div>
-                                        </div>
-                                        <div class="column is-4 has-text-centered">
-                                            <figure class="image is-128x128 is-inline-block">
-                                                <img class="is-rounded" src="img/Stickers_Logo_MMI.png"
-                                                    alt="MMI Wave" />
-                                            </figure>
-                                        </div>
-                                    </div>
+                        
+                        <!-- Engagement 1: MMI Wave -->
+                        <div class="engagement-frameless-item">
+                            <div class="engagement-frameless-visual">
+                                <img src="img/Stickers_Logo_MMI.png" alt="MMI Wave" class="engagement-logo" />
+                            </div>
+                            <div class="engagement-frameless-body">
+                                <div class="engagement-header">
+                                    <h3 class="engagement-frameless-title color-blue">Association - MMI WAVE</h3>
+                                    <span class="engagement-frameless-date">2024 — 2025</span>
+                                </div>
+                                <p class="engagement-frameless-desc mt-4">
+                                    Mon terrain de jeu créatif. En tant que graphiste, je traduis l'énergie de l'asso en <span class="text-highlight">visuels percutants</span>. C'est ici que je vis la <span class="text-highlight">force du collectif</span> : brainstormings électriques et projets caritatifs qui ont du sens.
+                                </p>
+                                <div class="engagement-frameless-tags mt-5">
+                                    <span class="frameless-tag">Direction artistique</span>
+                                    <span class="frameless-tag">Synergie d'équipe</span>
+                                    <span class="frameless-tag">Impact social</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="column is-10 mt-5">
-                        <div class="card card-experience">
-                            <div class="card-content card-content_experience">
-                                <div class="content">
-                                    <h3 class="is-size-3 m-0 has-text-weight-bold color-blue">Sport - Handball</h3>
-                                    <h4 class="datetime is-size-4 m-0 mb-4 is-italic">2012 - 2022</h4>
-                                    <p class="is-size-5 mb-4">
-                                        10 ans sur le parquet : ma <span class="text-highlight">discipline de
-                                            fer</span>. Le handball m'a appris que la victoire est un puzzle
-                                        collectif. Gérer la <span class="text-highlight">pression du match</span>
-                                        tout en arbitrant m'a forgé un mental qui ne lâche jamais rien.
-                                    </p>
-                                    <div class="tags">
-                                        <span class="tag is-info is-light">Résilience mentale</span>
-                                        <span class="tag is-info is-light">Leadership d'équipe</span>
-                                        <span class="tag is-info is-light">Sang-froid</span>
-                                    </div>
+                        <div class="engagement-separator"></div>
+
+                        <!-- Engagement 2: Handball -->
+                        <div class="engagement-frameless-item">
+                            <div class="engagement-frameless-visual">
+                                <div class="engagement-icon">
+                                    <i class="fa-solid fa-trophy"></i>
+                                </div>
+                            </div>
+                            <div class="engagement-frameless-body">
+                                <div class="engagement-header">
+                                    <h3 class="engagement-frameless-title color-blue">Sport - Handball</h3>
+                                    <span class="engagement-frameless-date">2012 — 2022</span>
+                                </div>
+                                <p class="engagement-frameless-desc mt-4">
+                                    10 ans sur le parquet : ma <span class="text-highlight">discipline de fer</span>. Le handball m'a appris que la victoire est un puzzle collectif. Gérer la <span class="text-highlight">pression du match</span> tout en arbitrant m'a forgé un mental qui ne lâche jamais rien.
+                                </p>
+                                <div class="engagement-frameless-tags mt-5">
+                                    <span class="frameless-tag">Résilience mentale</span>
+                                    <span class="frameless-tag">Leadership d'équipe</span>
+                                    <span class="frameless-tag">Sang-froid</span>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
