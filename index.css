@@ -1137,26 +1137,31 @@ h1.title {
 .card-overlay .description {
     font-size: 0.95rem;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     color: #eeeeee;
 }
 
 .card-overlay .tags {
-    margin-top: 5px;
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    align-items: center;
 }
 
 .project-card-tag {
-    background: rgba(255, 255, 255, 0.18);
-    border: 1.5px solid rgba(255, 255, 255, 0.4);
-    color: white;
-    font-size: 0.82rem;
-    font-weight: 700;
-    padding: 7px 16px;
-    border-radius: 50px;
-    letter-spacing: 0.5px;
+    background: rgba(255, 255, 255, 0.09);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 0.67rem;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 999px;
+    letter-spacing: 0.35px;
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
+    white-space: nowrap;
 }
 
 .calltoaction {
@@ -1562,7 +1567,7 @@ footer {
     display: inline-flex;
     align-items: center;
     gap: 7px;
-    margin-top: 12px;
+    margin-top: 0;
     background: rgba(255, 255, 255, 0.18);
     border: 1.5px solid rgba(255, 255, 255, 0.45);
     color: white;

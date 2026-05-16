@@ -30,7 +30,7 @@
 
                 <div class="is-flex ml-3">
                     <a class="button custom-btn primary mr-3" href="#mecontacter">Me Contacter</a>
-                    <a href="img/CV_Eva_Briffaut.pdf" download class="button custom-btn outline">
+                    <a href="img/CV_EvaBriffaut.pdf" download class="button custom-btn outline">
                         <i class="fa-solid fa-download mr-2"></i> CV
                     </a>
                 </div>
@@ -101,8 +101,89 @@
 
             <div class="container px-4">
                 <div class="columns is-multiline is-centered">
+                    <!-- Carte Projet : SARIA -->
+                    <div class="column is-one-third">
+                        <div class="card project-card" onclick="openModal('modal-saria')" role="button" tabindex="0"
+                            aria-label="Voir le projet SARIA">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="img/saria.svg" alt="SARIA">
+                                </figure>
+                            </div>
+                            <div class="card-overlay">
+                                <h3 class="title is-4">SARIA</h3>
+                                <time class="subtitle is-7">Avr - Jun 2026</time>
+                                <div class="content">
+                                    <div class="tags">
+                                        <span class="project-card-tag"><i class="fa-solid fa-user"></i>
+                                            Stage</span>
+                                        <span class="project-card-tag"><i class="fa-solid fa-palette"></i>
+                                            Graphisme</span>
+                                        <span class="project-card-tag"><i class="fa-solid fa-bullhorn"></i>
+                                            Communication</span>
+                                    </div>
+                                </div>
+                                <span class="project-see-more"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Voir plus</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carte Projet : Mon Idéal Immobilier -->
+                    <div class="column is-one-third">
+                        <div class="card project-card" onclick="openModal('modal-mon-ideal-immobilier')" role="button"
+                            tabindex="0" aria-label="Voir le projet Mon Idéal Immobilier">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="img/MII.svg" alt="MII">
+                                </figure>
+                            </div>
+                            <div class="card-overlay">
+                                <h3 class="title is-4">Mon Idéal Immobilier</h3>
+                                <time class="subtitle is-7">Sep 2025 - Avr 2026</time>
+                                <div class="content">
+                                    <div class="tags">
+                                        <span class="project-card-tag"><i class="fa-solid fa-magnifying-glass"></i>
+                                            Analyse</span>
+                                        <span class="project-card-tag"><i class="fa-solid fa-code"></i>
+                                            UX-UI/Développement Web</span>
+                                        <span class="project-card-tag"><i class="fa-solid fa-palette"></i>
+                                            Graphisme</span>
+                                    </div>
+                                </div>
+                                <span class="project-see-more"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Voir plus</span>
+                            </div>
+                        </div>
+                    </div>
 
-                    <!-- Carte Projet : Dead Star -->
+                   
+                    <!-- Carte Projet : 8 Mars -->
+                    <div class="column is-one-third">
+                        <div class="card project-card" onclick="openModal('modal-8mars')" role="button" tabindex="0"
+                            aria-label="Voir le projet 8 Mars">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="img/8mars.svg" alt="8 Mars">
+                                </figure>
+                            </div>
+                            <div class="card-overlay">
+                                <h3 class="title is-4">8 Mars</h3>
+                                <time class="subtitle is-7">Mar 2026</time>
+                                <div class="content">
+                                    <div class="tags">
+                                        <span class="project-card-tag"><i class="fa-solid fa-palette"></i>
+                                            Graphisme</span>
+                                        <span class="project-card-tag"><i class="fa-solid fa-bullhorn"></i>
+                                            Communication</span>
+                                    </div>
+                                </div>
+                                <span class="project-see-more"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Voir plus</span>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Carte Projet : Dead Star -->
                     <div class="column is-one-third">
                         <div class="card project-card" onclick="openModal('modal-deadstar')" role="button" tabindex="0"
                             aria-label="Voir le projet Dead Star">
@@ -115,10 +196,11 @@
                                 <h3 class="title is-4">Dead Star</h3>
                                 <time class="subtitle is-7">Déc 2025</time>
                                 <div class="content">
-                                    <p class="description">Affiche promotionnelle</p>
                                     <div class="tags">
                                         <span class="project-card-tag"><i class="fa-solid fa-palette"></i>
                                             Graphisme</span>
+                                        <span class="project-card-tag"><i class="fa-solid fa-bullhorn"></i>
+                                            Communication</span>
                                     </div>
                                 </div>
                                 <span class="project-see-more"><i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -126,6 +208,7 @@
                             </div>
                         </div>
                     </div>
+
 
                     <!-- Carte Projet : Locfit -->
                     <div class="column is-one-third">
@@ -140,7 +223,6 @@
                                 <h3 class="title is-4">Locfit</h3>
                                 <time class="subtitle is-7">Sep - Déc 2025</time>
                                 <div class="content">
-                                    <p class="description">Site de location de matériel sportif</p>
                                     <div class="tags">
                                         <span class="project-card-tag"><i class="fa-solid fa-code"></i>
                                             UX-UI/Développement Web</span>
@@ -165,7 +247,6 @@
                                 <h3 class="title is-4">IUT'icarte</h3>
                                 <time class="subtitle is-7">Oct - Déc 2024</time>
                                 <div class="content">
-                                    <p class="description">Objectif : Zéro Faim (ODD)</p>
                                     <div class="tags">
                                         <span class="project-card-tag"><i class="fa-solid fa-leaf"></i> ODD &
                                             Design</span>
@@ -177,80 +258,8 @@
                         </div>
                     </div>
 
-                    <!-- Carte Projet : Portrait -->
-                    <div class="column is-one-third">
-                        <div class="card project-card" onclick="openModal('modal-portrait')" role="button" tabindex="0"
-                            aria-label="Voir le projet Portrait">
-                            <div class="card-image">
-                                <figure class="image">
-                                    <img src="img/portrait.svg" alt="Portrait">
-                                </figure>
-                            </div>
-                            <div class="card-overlay">
-                                <h3 class="title is-4">Portrait</h3>
-                                <time class="subtitle is-7">Oct 2024</time>
-                                <div class="content">
-                                    <p class="description">Composition graphique</p>
-                                    <div class="tags">
-                                        <span class="project-card-tag"><i class="fa-solid fa-user"></i>
-                                            Composition</span>
-                                    </div>
-                                </div>
-                                <span class="project-see-more"><i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                    Voir plus</span>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Carte Projet : Mon Idéal Immobilier -->
-                    <div class="column is-one-third">
-                        <div class="card project-card" onclick="openModal('modal-mon-ideal-immobilier')" role="button"
-                            tabindex="0" aria-label="Voir le projet Mon Idéal Immobilier">
-                            <div class="card-image">
-                                <figure class="image">
-                                    <img src="img/MII.svg" alt="MII">
-                                </figure>
-                            </div>
-                            <div class="card-overlay">
-                                <h3 class="title is-4">Mon Idéal Immobilier</h3>
-                                <time class="subtitle is-7">Sep 2025 - Avr 2026</time>
-                                <div class="content">
-                                    <p class="description">Projet pluridisciplinaire</p>
-                                    <div class="tags">
-                                        <span class="project-card-tag"><i class="fa-solid fa-magnifying-glass"></i>
-                                            Analyse</span>
-                                    </div>
-                                </div>
-                                <span class="project-see-more"><i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                    Voir plus</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Carte Projet : Silence des couloirs -->
-                    <div class="column is-one-third">
-                        <div class="card project-card" onclick="openModal('modal-silence')" role="button" tabindex="0"
-                            aria-label="Voir le projet Silence des couloirs">
-                            <div class="card-image">
-                                <figure class="image">
-                                    <img src="img/Capture d'écran 2025-03-11 184936.png" alt="Silence des couloirs">
-                                </figure>
-                            </div>
-                            <div class="card-overlay">
-                                <h3 class="title is-4">Silence des couloirs</h3>
-                                <time class="subtitle is-7">Oct - Déc 2024</time>
-                                <div class="content">
-                                    <p class="description">Court-métrage (2 min)</p>
-                                    <div class="tags">
-                                        <span class="project-card-tag"><i class="fa-solid fa-film"></i>
-                                            Audiovisuel</span>
-                                    </div>
-                                </div>
-                                <span class="project-see-more"><i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                    Voir plus</span>
-                            </div>
-                        </div>
-                    </div>
+                    
 
                 </div>
             </div>
@@ -897,32 +906,29 @@
         </div>
     </div>
 
-    <!-- Modale : Portrait -->
-    <div class="project-modal-overlay" id="modal-portrait" onclick="closeModalOnOverlay(event, this)" role="dialog"
-        aria-modal="true" aria-labelledby="modal-portrait-title">
+    <!-- Modale : 8 Mars -->
+    <div class="project-modal-overlay" id="modal-8mars" onclick="closeModalOnOverlay(event, this)" role="dialog"
+        aria-modal="true" aria-labelledby="modal-8mars-title">
         <div class="project-modal">
-            <button class="modal-close-btn" onclick="closeModal('modal-portrait')" aria-label="Fermer"><i
+            <button class="modal-close-btn" onclick="closeModal('modal-8mars')" aria-label="Fermer"><i
                     class="fa-solid fa-xmark"></i></button>
             <div class="modal-hero">
-                <img src="img/portrait.svg" alt="Portrait" class="modal-hero-img">
+                <img src="img/8marsPrez.svg" alt="8 Mars" class="modal-hero-img">
                 <div class="modal-hero-overlay">
-                    <span class="modal-category-badge"><i class="fa-solid fa-user"></i> Composition</span>
+                    <span class="modal-category-badge"><i class="fa-solid fa-bullhorn"></i> Communication</span>
                 </div>
             </div>
             <div class="modal-body">
                 <div class="modal-meta">
-                    <span class="modal-date"><i class="fa-regular fa-calendar"></i> Octobre 2024</span>
-                    <span class="modal-type">Projet BUT MMI</span>
+                    <span class="modal-date"><i class="fa-regular fa-calendar"></i> Mars 2026</span>
+                    <span class="modal-type">Projet Personnel</span>
                 </div>
-                <h2 class="modal-title" id="modal-portrait-title">Portrait</h2>
-                <p class="modal-description">Composition graphique autour du thème du portrait. Travail sur les
-                    contrastes, la mise en page et le jeu entre texte et image. Réalisé avec Affinity Publisher, ce
-                    projet explore la notion d'identité visuelle à travers une approche artistique et introspective.</p>
+                <h2 class="modal-title" id="modal-8mars-title">8 Mars</h2>
+                <p class="modal-description">Post Instagram fait pour l’IFSI de Caen à l’occasion de la journée de la
+                    femme. Le but était de mettre en lumière des femmes importantes dans le monde médical.
+                    Grâce à ce projet, j’ai gagné le prix communication au festival MMI de Lannion (A l’West Fest)</p>
                 <div class="modal-tags-section">
-                    <span class="modal-tag">🖌️ Affinity</span>
-                    <span class="modal-tag">🎨 Composition</span>
-                    <span class="modal-tag">⏱️ Temps limité</span>
-                    <span class="modal-tag">👤 Identité</span>
+                    <span class="modal-tag"><i class="fa-brands fa-figma"></i> Figma</span>
                 </div>
             </div>
         </div>
@@ -946,27 +952,30 @@
                     <span class="modal-type">Projet BUT MMI</span>
                 </div>
                 <h2 class="modal-title" id="modal-mon-ideal-immobilier-title">Mon Idéal Immobilier</h2>
-                <p class="modal-description">Création d'une identité visuelle et d'une charte graphique pour le projet
-                    Mon Idéal Immobilier. Travail sur les codes de l'immobilier, la typographie et les visuels pour un
-                    rendu professionnel et attractif.</p>
+                <p class="modal-description">Nous avons mené un travail de groupe tout au long de l’année autour du
+                    projet « Mon Idéal Immobilier », porté par un client réel.
+                    Notre mission a consisté à réaliser une étude de marché puis à concevoir l’identité visuelle
+                    complète du projet.
+                    Cela inclut la création du logo, le développement d’un site web, la mise en place d’une stratégie de
+                    communication sur les réseaux sociaux ainsi que la réalisation de contenus vidéo.</p>
                 <div class="modal-tags-section">
-                    <span class="modal-tag">🔍 Analyse</span>
-                    <span class="modal-tag">🖌️ Affinity</span>
-                    <span class="modal-tag">🏡 Immobilier</span>
-                    <span class="modal-tag">📐 Branding</span>
+                    <span class="modal-tag"><i class="fa-brands fa-figma"></i> Figma</span>
+                    <span class="modal-tag"><i class="fa-solid fa-code"></i> VScode</span>
+                    <span class="modal-tag"><i class="fa-brands fa-google-drive"></i> Google Drive</span>
+                    <span class="modal-tag"><i class="fa-solid fa-file-video"></i> Première Pro</span>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modale : Silence des couloirs -->
-    <div class="project-modal-overlay" id="modal-silence" onclick="closeModalOnOverlay(event, this)" role="dialog"
-        aria-modal="true" aria-labelledby="modal-silence-title">
+    <!-- Modale : SARIA -->
+    <div class="project-modal-overlay" id="modal-saria" onclick="closeModalOnOverlay(event, this)" role="dialog"
+        aria-modal="true" aria-labelledby="modal-saria-title">
         <div class="project-modal">
-            <button class="modal-close-btn" onclick="closeModal('modal-silence')" aria-label="Fermer"><i
+            <button class="modal-close-btn" onclick="closeModal('modal-saria')" aria-label="Fermer"><i
                     class="fa-solid fa-xmark"></i></button>
             <div class="modal-hero">
-                <img src="img/Capture d'écran 2025-03-11 184936.png" alt="Silence des couloirs" class="modal-hero-img">
+                <img src="img/sariaPrez.svg" alt="SARIA" class="modal-hero-img">
                 <div class="modal-hero-overlay">
                     <span class="modal-category-badge"><i class="fa-solid fa-film"></i> Audiovisuel</span>
                 </div>
@@ -976,15 +985,15 @@
                     <span class="modal-date"><i class="fa-regular fa-calendar"></i> Oct – Déc 2024</span>
                     <span class="modal-type">Projet BUT MMI</span>
                 </div>
-                <h2 class="modal-title" id="modal-silence-title">Silence des couloirs</h2>
-                <p class="modal-description">Court-métrage de 2 minutes réalisé dans le cadre du BUT MMI, explorant
-                    l'atmosphère oppressante d'un couloir vide. De la prise de vue au montage final, tout le pipeline de
-                    post-production a été géré sur DaVinci Resolve, avec un travail particulier sur l'étalonnage et le
-                    sound design.</p>
+                <h2 class="modal-title" id="modal-saria-title">SARIA</h2>
+                <p class="modal-description">Court-métrage explorant à travers une narration visuelle poétique. Travail
+                    complet de production : réalisation, montage et post-production sur DaVinci Resolve avec un focus
+                    particulier sur l'étalonnage cinématographique et le sound design immersif pour une expérience
+                    sensorielle complète.</p>
                 <div class="modal-tags-section">
                     <span class="modal-tag">🎬 DaVinci Resolve</span>
                     <span class="modal-tag">✂️ Montage</span>
-                    <span class="modal-tag">🎥 Court-métrage</span>
+                    <span class="modal-tag">🎥 Réalisation</span>
                     <span class="modal-tag">🎵 Sound design</span>
                 </div>
             </div>
