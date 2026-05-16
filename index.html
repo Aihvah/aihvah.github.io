@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="img/EB.svg" />
 </head>
@@ -102,11 +102,13 @@
             <div class="container px-4">
                 <div class="columns is-multiline is-centered">
 
+                    <!-- Carte Projet : Dead Star -->
                     <div class="column is-one-third">
-                        <div class="card project-card">
+                        <div class="card project-card" onclick="openModal('modal-deadstar')" role="button" tabindex="0"
+                            aria-label="Voir le projet Dead Star">
                             <div class="card-image">
                                 <figure class="image">
-                                    <img src="img/deadstar.svg" alt="Dead Star">
+                                    <img src="img/boc.svg" alt="Dead Star">
                                 </figure>
                             </div>
                             <div class="card-overlay">
@@ -115,38 +117,45 @@
                                 <div class="content">
                                     <p class="description">Affiche promotionnelle</p>
                                     <div class="tags">
-                                        <span class="tag is-link is-light">Figma</span>
-                                        <span class="tag is-danger is-light">Personnel</span>
-                                        <span class="tag is-primary is-light">Graphisme</span>
+                                        <span class="project-card-tag"><i class="fa-solid fa-palette"></i>
+                                            Graphisme</span>
                                     </div>
                                 </div>
+                                <span class="project-see-more"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Voir plus</span>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Carte Projet : Locfit -->
                     <div class="column is-one-third">
-                        <div class="card project-card">
+                        <div class="card project-card" onclick="openModal('modal-locfit')" role="button" tabindex="0"
+                            aria-label="Voir le projet Locfit">
                             <div class="card-image">
                                 <figure class="image">
-                                    <img src="img/locfit.svg" alt="Locfit">
+                                    <img src="img/locfitprez.svg" alt="Locfit">
                                 </figure>
                             </div>
                             <div class="card-overlay">
                                 <h3 class="title is-4">Locfit</h3>
-                                <time class="subtitle is-7">Sep - Dec 2025</time>
+                                <time class="subtitle is-7">Sep - Déc 2025</time>
                                 <div class="content">
                                     <p class="description">Site de location de matériel sportif</p>
                                     <div class="tags">
-                                        <span class="tag is-link is-light">Affinity</span>
-                                        <span class="tag is-primary is-light">Graphisme</span>
+                                        <span class="project-card-tag"><i class="fa-solid fa-code"></i>
+                                            UX-UI/Développement Web</span>
                                     </div>
                                 </div>
+                                <span class="project-see-more"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Voir plus</span>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Carte Projet : IUT'icarte -->
                     <div class="column is-one-third">
-                        <div class="card project-card">
+                        <div class="card project-card" onclick="openModal('modal-iuticarte')" role="button" tabindex="0"
+                            aria-label="Voir le projet IUT'icarte">
                             <div class="card-image">
                                 <figure class="image">
                                     <img src="img/iuticarte.svg" alt="IUT'icarte">
@@ -158,16 +167,20 @@
                                 <div class="content">
                                     <p class="description">Objectif : Zéro Faim (ODD)</p>
                                     <div class="tags">
-                                        <span class="tag is-link is-light">Figma</span>
-                                        <span class="tag is-info is-light">Cahier des charges</span>
+                                        <span class="project-card-tag"><i class="fa-solid fa-leaf"></i> ODD &
+                                            Design</span>
                                     </div>
                                 </div>
+                                <span class="project-see-more"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Voir plus</span>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Carte Projet : Portrait -->
                     <div class="column is-one-third">
-                        <div class="card project-card">
+                        <div class="card project-card" onclick="openModal('modal-portrait')" role="button" tabindex="0"
+                            aria-label="Voir le projet Portrait">
                             <div class="card-image">
                                 <figure class="image">
                                     <img src="img/portrait.svg" alt="Portrait">
@@ -179,37 +192,45 @@
                                 <div class="content">
                                     <p class="description">Composition graphique</p>
                                     <div class="tags">
-                                        <span class="tag is-link is-light">Affinity</span>
-                                        <span class="tag is-primary is-light">Temps</span>
+                                        <span class="project-card-tag"><i class="fa-solid fa-user"></i>
+                                            Composition</span>
                                     </div>
                                 </div>
+                                <span class="project-see-more"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Voir plus</span>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Carte Projet : Mon Idéal Immobilier -->
                     <div class="column is-one-third">
-                        <div class="card project-card">
+                        <div class="card project-card" onclick="openModal('modal-mon-ideal-immobilier')" role="button"
+                            tabindex="0" aria-label="Voir le projet Mon Idéal Immobilier">
                             <div class="card-image">
                                 <figure class="image">
-                                    <img src="img/Vertigo.png" alt="Vertigo">
+                                    <img src="img/MII.svg" alt="MII">
                                 </figure>
                             </div>
                             <div class="card-overlay">
-                                <h3 class="title is-4">Vertigo</h3>
-                                <time class="subtitle is-7">Oct - Déc 2024</time>
+                                <h3 class="title is-4">Mon Idéal Immobilier</h3>
+                                <time class="subtitle is-7">Sep 2025 - Avr 2026</time>
                                 <div class="content">
-                                    <p class="description">Analyse d'affiche</p>
+                                    <p class="description">Projet pluridisciplinaire</p>
                                     <div class="tags">
-                                        <span class="tag is-link is-light">Analyse</span>
-                                        <span class="tag is-info is-light">Affinity</span>
+                                        <span class="project-card-tag"><i class="fa-solid fa-magnifying-glass"></i>
+                                            Analyse</span>
                                     </div>
                                 </div>
+                                <span class="project-see-more"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Voir plus</span>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Carte Projet : Silence des couloirs -->
                     <div class="column is-one-third">
-                        <div class="card project-card">
+                        <div class="card project-card" onclick="openModal('modal-silence')" role="button" tabindex="0"
+                            aria-label="Voir le projet Silence des couloirs">
                             <div class="card-image">
                                 <figure class="image">
                                     <img src="img/Capture d'écran 2025-03-11 184936.png" alt="Silence des couloirs">
@@ -221,10 +242,12 @@
                                 <div class="content">
                                     <p class="description">Court-métrage (2 min)</p>
                                     <div class="tags">
-                                        <span class="tag is-danger is-light">DaVinci</span>
-                                        <span class="tag is-warning is-light">Montage</span>
+                                        <span class="project-card-tag"><i class="fa-solid fa-film"></i>
+                                            Audiovisuel</span>
                                     </div>
                                 </div>
+                                <span class="project-see-more"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Voir plus</span>
                             </div>
                         </div>
                     </div>
@@ -424,13 +447,14 @@
 
                     <!-- Compétences Carrousel Infini Manuel -->
                     <div class="skills-carousel-wrapper mt-4 mb-6">
-                        <button class="carousel-arrow left" onclick="scrollSkillsCarousel(-300)" aria-label="Défiler à gauche">
+                        <button class="carousel-arrow left" onclick="scrollSkillsCarousel(-300)"
+                            aria-label="Défiler à gauche">
                             <i class="fa-solid fa-chevron-left"></i>
                         </button>
 
                         <div class="skills-carousel-container" id="manual-skills-container">
                             <div class="skills-carousel-track" id="infinite-skills-track">
-                                
+
                                 <!-- 1. Audiovisuel -->
                                 <div class="carousel-item-skill">
                                     <div class="skill-card-uniform">
@@ -458,7 +482,8 @@
                                 <!-- 3. Graphisme -->
                                 <div class="carousel-item-skill">
                                     <div class="skill-card-uniform">
-                                        <div class="skill-icon-wrapper"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                                        <div class="skill-icon-wrapper"><i class="fa-solid fa-wand-magic-sparkles"></i>
+                                        </div>
                                         <h3>Graphisme</h3>
                                         <div class="skill-tags-bottom">
                                             <span class="tag">Adobe CC</span>
@@ -579,21 +604,22 @@
                             </div>
                         </div>
 
-                        <button class="carousel-arrow right" onclick="scrollSkillsCarousel(300)" aria-label="Défiler à droite">
+                        <button class="carousel-arrow right" onclick="scrollSkillsCarousel(300)"
+                            aria-label="Défiler à droite">
                             <i class="fa-solid fa-chevron-right"></i>
                         </button>
                     </div>
 
                     <script>
-                        document.addEventListener("DOMContentLoaded", function() {
+                        document.addEventListener("DOMContentLoaded", function () {
                             const track = document.getElementById('infinite-skills-track');
                             const container = document.getElementById('manual-skills-container');
-                            
+
                             if (track && container) {
                                 const originalItems = Array.from(track.children);
-                                
+
                                 // Dupliquer les compétences 5 fois pour donner l'impression d'infini
-                                for(let i = 0; i < 5; i++) {
+                                for (let i = 0; i < 5; i++) {
                                     originalItems.forEach(item => {
                                         track.appendChild(item.cloneNode(true));
                                     });
@@ -608,10 +634,10 @@
                                 // Logique de scroll en boucle invisible (si on approche des bords)
                                 container.addEventListener('scroll', () => {
                                     const maxScroll = container.scrollWidth - container.clientWidth;
-                                    
+
                                     if (container.scrollLeft >= maxScroll - 50) {
                                         // On atteint la fin, retour au milieu en désactivant temporairement l'animation
-                                        container.style.scrollBehavior = 'auto'; 
+                                        container.style.scrollBehavior = 'auto';
                                         container.scrollLeft = maxScroll / 2;
                                         container.style.scrollBehavior = 'smooth';
                                     } else if (container.scrollLeft <= 50) {
@@ -650,7 +676,8 @@
                             <div class="card-content">
                                 <div class="experience-header has-text-centered mb-5 pt-4">
                                     <div class="icon-floating-badge">
-                                        <img src="img/Stickers_Logo_MMI.png" alt="MMI Wave" style="width:55px;height:55px;object-fit:contain;border-radius:12px;" />
+                                        <img src="img/Stickers_Logo_MMI.png" alt="MMI Wave"
+                                            style="width:55px;height:55px;object-fit:contain;border-radius:12px;" />
                                     </div>
                                     <div class="mb-3">
                                         <span class="tag is-rounded is-white has-text-grey-darker has-text-weight-bold"
@@ -660,7 +687,9 @@
                                     <p class="subtitle is-6 has-text-grey-light mb-0">Association étudiante</p>
                                 </div>
                                 <div class="content">
-                                    <p class="is-size-5 mb-4">Graphiste de l'asso, je traduis l'énergie du collectif en <span class="text-highlight">visuels percutants</span> et projets caritatifs.</p>
+                                    <p class="is-size-5 mb-4">Graphiste de l'asso, je traduis l'énergie du collectif en
+                                        <span class="text-highlight">visuels percutants</span> et projets caritatifs.
+                                    </p>
                                     <div class="tags is-justify-content-center">
                                         <span class="tag is-info is-light">Direction artistique</span>
                                         <span class="tag is-info is-light">Synergie d'équipe</span>
@@ -687,7 +716,10 @@
                                     <p class="subtitle is-6 has-text-grey-light mb-0">Sport collectif — 10 ans</p>
                                 </div>
                                 <div class="content">
-                                    <p class="is-size-5 mb-4">10 ans sur le parquet, ma <span class="text-highlight">discipline de fer</span>. Arbitrage et gestion de la <span class="text-highlight">pression du match</span>.</p>
+                                    <p class="is-size-5 mb-4">10 ans sur le parquet, ma <span
+                                            class="text-highlight">discipline de fer</span>. Arbitrage et gestion de la
+                                        <span class="text-highlight">pression du match</span>.
+                                    </p>
                                     <div class="tags is-justify-content-center">
                                         <span class="tag is-info is-light">Résilience mentale</span>
                                         <span class="tag is-info is-light">Leadership</span>
@@ -711,74 +743,253 @@
                     </p>
                 </div>
 
-                <div class="contact-modern-wrapper contact-single">
-                    <!-- Colonne gauche : infos -->
-                    <div class="contact-info-card">
-                        <div class="contact-card-header">
-                            <span class="contact-card-badge">
-                                <i class="fa-solid fa-paper-plane"></i>
-                            </span>
-                            <h3 class="contact-card-title">Me contacter</h3>
-                            <p class="contact-card-sub">Je réponds sous 48h ☀️</p>
-                        </div>
+                <!-- Bento grid contact -->
+                <div class="contact-bento-grid">
 
-                        <div class="contact-items-list">
-                            <a href="mailto:eva.briffaut@gmail.com" class="contact-item-row">
-                                <div class="contact-item-icon">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </div>
-                                <div class="contact-item-body">
-                                    <span class="contact-item-label">Email</span>
-                                    <span class="contact-item-value">eva.briffaut@gmail.com</span>
-                                </div>
-                                <i class="fa-solid fa-arrow-right contact-item-arrow"></i>
-                            </a>
-
-                            <a href="tel:0638896350" class="contact-item-row">
-                                <div class="contact-item-icon">
-                                    <i class="fa-solid fa-phone"></i>
-                                </div>
-                                <div class="contact-item-body">
-                                    <span class="contact-item-label">Téléphone</span>
-                                    <span class="contact-item-value">06 38 89 63 50</span>
-                                </div>
-                                <i class="fa-solid fa-arrow-right contact-item-arrow"></i>
-                            </a>
-
-                            <div class="contact-item-row no-link">
-                                <div class="contact-item-icon">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                </div>
-                                <div class="contact-item-body">
-                                    <span class="contact-item-label">Localisation</span>
-                                    <span class="contact-item-value">Lannion, Bretagne 🌧️</span>
-                                </div>
-                            </div>
-
-                            <a href="https://www.linkedin.com/in/eva-briffaut-123427327/" target="_blank" class="contact-item-row">
-                                <div class="contact-item-icon linkedin">
-                                    <i class="fa-brands fa-linkedin-in"></i>
-                                </div>
-                                <div class="contact-item-body">
-                                    <span class="contact-item-label">LinkedIn</span>
-                                    <span class="contact-item-value">Eva Briffaut</span>
-                                </div>
-                                <i class="fa-solid fa-arrow-right contact-item-arrow"></i>
-                            </a>
+                    <!-- Tuile photo -->
+                    <div class="contact-bento-tile photo-tile">
+                        <img src="img/avatar.svg" alt="Eva Briffaut" class="contact-bento-avatar" />
+                        <div class="contact-bento-dispo">
+                            <span class="dispo-dot"></span>
+                            Disponible
                         </div>
                     </div>
 
-                    <!-- Photo autocollant hors de la carte -->
-                    <div class="contact-sticker">
-                        <img src="img/avatar.jpg" alt="Eva Briffaut" class="contact-avatar-inline" />
-                        <span class="contact-dispo-tag">Disponible ✨</span>
+                    <!-- Tuile Email -->
+                    <a href="mailto:eva.briffaut@gmail.com" class="contact-bento-tile email-tile">
+                        <div class="bento-tile-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <span class="bento-tile-label">Email</span>
+                        <span class="bento-tile-value">eva.briffaut@gmail.com</span>
+                        <i class="fa-solid fa-arrow-up-right bento-tile-arrow"></i>
+                    </a>
+
+                    <!-- Tuile Téléphone -->
+                    <a href="tel:0638896350" class="contact-bento-tile phone-tile">
+                        <div class="bento-tile-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <span class="bento-tile-label">Téléphone</span>
+                        <span class="bento-tile-value">06 38 89 63 50</span>
+                        <i class="fa-solid fa-arrow-up-right bento-tile-arrow"></i>
+                    </a>
+
+                    <!-- Tuile LinkedIn -->
+                    <a href="https://www.linkedin.com/in/eva-briffaut-123427327/" target="_blank"
+                        class="contact-bento-tile linkedin-tile">
+                        <div class="bento-tile-icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <span class="bento-tile-label">LinkedIn</span>
+                        <span class="bento-tile-value">Eva Briffaut</span>
+                        <i class="fa-solid fa-arrow-up-right bento-tile-arrow"></i>
+                    </a>
+
+                    <!-- Tuile Localisation -->
+                    <div class="contact-bento-tile location-tile">
+                        <div class="bento-tile-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <span class="bento-tile-label">Localisation</span>
+                        <span class="bento-tile-value">Rennes,Lannion</span>
                     </div>
+
 
                 </div>
             </div>
         </section>
 
     </main>
+
+    <!-- ===================== MODALES PROJETS ===================== -->
+
+    <!-- Modale : Dead Star -->
+    <div class="project-modal-overlay" id="modal-deadstar" onclick="closeModalOnOverlay(event, this)" role="dialog"
+        aria-modal="true" aria-labelledby="modal-deadstar-title">
+        <div class="project-modal">
+            <button class="modal-close-btn" onclick="closeModal('modal-deadstar')" aria-label="Fermer"><i
+                    class="fa-solid fa-xmark"></i></button>
+            <div class="modal-hero">
+                <img src="img/deadstar.svg" alt="Dead Star" class="modal-hero-img">
+                <div class="modal-hero-overlay">
+                    <span class="modal-category-badge"><i class="fa-solid fa-palette"></i> Graphisme</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-meta">
+                    <span class="modal-date"><i class="fa-regular fa-calendar"></i> Décembre 2025</span>
+                    <span class="modal-type">Projet Personnel</span>
+                </div>
+                <h2 class="modal-title" id="modal-deadstar-title">Dead Star</h2>
+                <p class="modal-description">Création d’une affiche promotionnelle pour la nouvelle chanson “Dead Star”
+                    du groupe de musique Blood of Code.
+                    Ce projet m’a permis de développer mes compétences en design graphique pour la musique,
+                    collaboration avec des clients réels et création d’identité visuelle cohérente, du brief à la
+                    production.</p>
+
+                <div class="modal-tags-section">
+                    <span class="modal-tag"><i class="fa-brands fa-figma"></i> Figma</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modale : Locfit -->
+    <div class="project-modal-overlay" id="modal-locfit" onclick="closeModalOnOverlay(event, this)" role="dialog"
+        aria-modal="true" aria-labelledby="modal-locfit-title">
+        <div class="project-modal">
+            <button class="modal-close-btn" onclick="closeModal('modal-locfit')" aria-label="Fermer"><i
+                    class="fa-solid fa-xmark"></i></button>
+            <div class="modal-hero">
+                <img src="img/locfit.svg" alt="Locfit" class="modal-hero-img">
+                <div class="modal-hero-overlay">
+                    <span class="modal-category-badge"><i class="fa-solid fa-code"></i> UX-UI/Développement Web</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-meta">
+                    <span class="modal-date"><i class="fa-regular fa-calendar"></i> Sep – Déc 2025</span>
+                    <span class="modal-type">Projet BUT MMI</span>
+                </div>
+                <h2 class="modal-title" id="modal-locfit-title">Locfit</h2>
+                <p class="modal-description">LocFit est un projet de site de location de produits sportifs, pensé pour
+                    faciliter l’accès au matériel pour différents profils d’utilisateurs.
+                    Le travail portait à la fois sur l’étude de la cible, le maquettage de l’interface et le
+                    développement du site.</p>
+                <div class="modal-tags-section">
+                    <span class="modal-tag"><i class="fa-brands fa-figma"></i> Figma</span>
+                    <span class="modal-tag"><i class="fa-solid fa-code"></i> VScode</span>
+                    <span class="modal-tag"><i class="fa-solid fa-database"></i>MAMP</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modale : IUT'icarte -->
+    <div class="project-modal-overlay" id="modal-iuticarte" onclick="closeModalOnOverlay(event, this)" role="dialog"
+        aria-modal="true" aria-labelledby="modal-iuticarte-title">
+        <div class="project-modal">
+            <button class="modal-close-btn" onclick="closeModal('modal-iuticarte')" aria-label="Fermer"><i
+                    class="fa-solid fa-xmark"></i></button>
+            <div class="modal-hero">
+                <img src="img/iuticarte.svg" alt="IUT'icarte" class="modal-hero-img">
+                <div class="modal-hero-overlay">
+                    <span class="modal-category-badge"><i class="fa-solid fa-leaf"></i> ODD & Design</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-meta">
+                    <span class="modal-date"><i class="fa-regular fa-calendar"></i> Oct – Déc 2024</span>
+                    <span class="modal-type">Projet BUT MMI</span>
+                </div>
+                <h2 class="modal-title" id="modal-iuticarte-title">IUT'icarte</h2>
+                <p class="modal-description">Application de cartographie conçue dans le cadre de l'Objectif de
+                    Développement Durable n°2 « Zéro Faim ». Le projet inclut un cahier des charges complet, des
+                    maquettes Figma et une réflexion UX centrée sur l'accessibilité alimentaire autour de l'IUT.</p>
+                <div class="modal-tags-section">
+                    <span class="modal-tag"><i class="fa-brands fa-figma"></i> Figma</span>
+                    <span class="modal-tag">🌍 ODD</span>
+                    <span class="modal-tag">📋 Cahier des charges</span>
+                    <span class="modal-tag">🗺️ Carto</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modale : Portrait -->
+    <div class="project-modal-overlay" id="modal-portrait" onclick="closeModalOnOverlay(event, this)" role="dialog"
+        aria-modal="true" aria-labelledby="modal-portrait-title">
+        <div class="project-modal">
+            <button class="modal-close-btn" onclick="closeModal('modal-portrait')" aria-label="Fermer"><i
+                    class="fa-solid fa-xmark"></i></button>
+            <div class="modal-hero">
+                <img src="img/portrait.svg" alt="Portrait" class="modal-hero-img">
+                <div class="modal-hero-overlay">
+                    <span class="modal-category-badge"><i class="fa-solid fa-user"></i> Composition</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-meta">
+                    <span class="modal-date"><i class="fa-regular fa-calendar"></i> Octobre 2024</span>
+                    <span class="modal-type">Projet BUT MMI</span>
+                </div>
+                <h2 class="modal-title" id="modal-portrait-title">Portrait</h2>
+                <p class="modal-description">Composition graphique autour du thème du portrait. Travail sur les
+                    contrastes, la mise en page et le jeu entre texte et image. Réalisé avec Affinity Publisher, ce
+                    projet explore la notion d'identité visuelle à travers une approche artistique et introspective.</p>
+                <div class="modal-tags-section">
+                    <span class="modal-tag">🖌️ Affinity</span>
+                    <span class="modal-tag">🎨 Composition</span>
+                    <span class="modal-tag">⏱️ Temps limité</span>
+                    <span class="modal-tag">👤 Identité</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modale : Mon Idéal Immobilier -->
+    <div class="project-modal-overlay" id="modal-mon-ideal-immobilier" onclick="closeModalOnOverlay(event, this)"
+        role="dialog" aria-modal="true" aria-labelledby="modal-mon-ideal-immobilier-title">
+        <div class="project-modal">
+            <button class="modal-close-btn" onclick="closeModal('modal-mon-ideal-immobilier')" aria-label="Fermer"><i
+                    class="fa-solid fa-xmark"></i></button>
+            <div class="modal-hero">
+                <img src="img/MIIIdentité.svg" alt="MII" class="modal-hero-img">
+                <div class="modal-hero-overlay">
+                    <span class="modal-category-badge"><i class="fa-solid fa-magnifying-glass"></i> Analyse</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-meta">
+                    <span class="modal-date"><i class="fa-regular fa-calendar"></i> Oct – Déc 2024</span>
+                    <span class="modal-type">Projet BUT MMI</span>
+                </div>
+                <h2 class="modal-title" id="modal-mon-ideal-immobilier-title">Mon Idéal Immobilier</h2>
+                <p class="modal-description">Création d'une identité visuelle et d'une charte graphique pour le projet
+                    Mon Idéal Immobilier. Travail sur les codes de l'immobilier, la typographie et les visuels pour un
+                    rendu professionnel et attractif.</p>
+                <div class="modal-tags-section">
+                    <span class="modal-tag">🔍 Analyse</span>
+                    <span class="modal-tag">🖌️ Affinity</span>
+                    <span class="modal-tag">🏡 Immobilier</span>
+                    <span class="modal-tag">📐 Branding</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modale : Silence des couloirs -->
+    <div class="project-modal-overlay" id="modal-silence" onclick="closeModalOnOverlay(event, this)" role="dialog"
+        aria-modal="true" aria-labelledby="modal-silence-title">
+        <div class="project-modal">
+            <button class="modal-close-btn" onclick="closeModal('modal-silence')" aria-label="Fermer"><i
+                    class="fa-solid fa-xmark"></i></button>
+            <div class="modal-hero">
+                <img src="img/Capture d'écran 2025-03-11 184936.png" alt="Silence des couloirs" class="modal-hero-img">
+                <div class="modal-hero-overlay">
+                    <span class="modal-category-badge"><i class="fa-solid fa-film"></i> Audiovisuel</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-meta">
+                    <span class="modal-date"><i class="fa-regular fa-calendar"></i> Oct – Déc 2024</span>
+                    <span class="modal-type">Projet BUT MMI</span>
+                </div>
+                <h2 class="modal-title" id="modal-silence-title">Silence des couloirs</h2>
+                <p class="modal-description">Court-métrage de 2 minutes réalisé dans le cadre du BUT MMI, explorant
+                    l'atmosphère oppressante d'un couloir vide. De la prise de vue au montage final, tout le pipeline de
+                    post-production a été géré sur DaVinci Resolve, avec un travail particulier sur l'étalonnage et le
+                    sound design.</p>
+                <div class="modal-tags-section">
+                    <span class="modal-tag">🎬 DaVinci Resolve</span>
+                    <span class="modal-tag">✂️ Montage</span>
+                    <span class="modal-tag">🎥 Court-métrage</span>
+                    <span class="modal-tag">🎵 Sound design</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="mt-6 mb-6"></div>
@@ -791,6 +1002,53 @@
 </body>
 
 <script>
+    // ---- Gestion des modales projets ----
+    function openModal(id) {
+        const modal = document.getElementById(id);
+        if (!modal) return;
+        modal.classList.add('is-active');
+        document.body.style.overflow = 'hidden';
+        // Focus trap
+        setTimeout(() => {
+            const closeBtn = modal.querySelector('.modal-close-btn');
+            if (closeBtn) closeBtn.focus();
+        }, 100);
+    }
+
+    function closeModal(id) {
+        const modal = document.getElementById(id);
+        if (!modal) return;
+        modal.classList.remove('is-active');
+        document.body.style.overflow = '';
+    }
+
+    function closeModalOnOverlay(event, overlay) {
+        if (event.target === overlay) {
+            overlay.classList.remove('is-active');
+            document.body.style.overflow = '';
+        }
+    }
+
+    // Fermer avec la touche Escape
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+            document.querySelectorAll('.project-modal-overlay.is-active').forEach(m => {
+                m.classList.remove('is-active');
+                document.body.style.overflow = '';
+            });
+        }
+    });
+
+    // Accessibilité : ouvrir la modale avec Entrée/Espace sur les cartes
+    document.querySelectorAll('.project-card[role="button"]').forEach(card => {
+        card.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                card.click();
+            }
+        });
+    });
+
     const cursor = document.querySelector('.custom-cursor');
     document.addEventListener('mousemove', (e) => {
         cursor.style.left = e.clientX + 'px';
